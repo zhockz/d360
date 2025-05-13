@@ -1,0 +1,300 @@
+@media only screen and (min-width:1441px) {
+    .desktop-view {
+        display: block
+    }
+    .mobile-view {
+        display: none
+    }
+
+    .container{max-width: 1600px !important;}
+
+}
+
+@media only screen and (min-width:1200px) and (max-width:1440px) {
+    .desktop-view {
+        display: block !important
+    }
+    .mobile-view {
+        display: none !important
+    }
+
+    .container{max-width: 1600px !important;}
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .desktop-view {
+        display: block !important
+    }
+    .mobile-view {
+        display: none !important
+    }
+
+    .container{max-width: 1600px !important;}
+}
+
+
+/* small devices */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .desktop-view {
+        display: none !important
+    }
+    .mobile-view {
+        display: block !important
+    }
+    .fnt-10 {
+        font-size: 5px !important
+    }
+    .fnt-12 {
+        font-size: 6px !important
+    }
+    .fnt-15 {
+        font-size: 8px !important
+    }
+    .fnt-18 {
+        font-size: 9px !important
+    }
+    .fnt-20 {
+        font-size: 10px !important
+    }
+    .fnt-25 {
+        font-size: 14px !important
+    }
+    .fnt-30 {
+        font-size: 15px !important
+    }
+    .fnt-40 {
+        font-size: 20px !important
+    }
+    .fnt-50 {
+        font-size: 25px !important
+    }
+    .fnt-60 {
+        font-size: 30px !important
+    }
+    .fnt-70 {
+        font-size: 35px !important
+    }
+    .fnt-80 {
+        font-size: 35px !important
+    }
+    .fnt-100 {
+        font-size: 50px !important
+    }
+    .fnt-120 {
+        font-size: 60px !important
+    }
+    .spacer-5 {
+        display: block;
+        height: 3px
+    }
+    .spacer-10 {
+        display: block;
+        height: 5px
+    }
+    .spacer-20 {
+        display: block;
+        height: 10px
+    }
+    .spacer-40 {
+        display: block;
+        height: 20px
+    }
+    .spacer-60 {
+        display: block;
+        height: 30px
+    }
+    .spacer-80 {
+        display: block;
+        height: 40px
+    }
+    .spacer-100 {
+        display: block;
+        height: 50px
+    }
+    .spacer-120 {
+        display: block;
+        height: 60px
+    }
+    .remPad {
+        padding-left: 12px !important;
+        padding-right: 12px !important
+    }
+   
+}
+
+@media only screen and (max-width:767px) {
+    .desktop-view {
+        display: none !important
+    }
+    .mobile-view {
+        display: block !important
+    }
+    .fnt-10 {
+        font-size: 5px !important
+    }
+    .fnt-12 {
+        font-size: 6px !important
+    }
+    .fnt-15 {
+        font-size: 8px !important
+    }
+    .fnt-18 {
+        font-size: 9px !important
+    }
+    .fnt-20 {
+        font-size: 10px !important
+    }
+    .fnt-25 {
+        font-size: 14px !important
+    }
+    .fnt-30 {
+        font-size: 15px !important
+    }
+    .fnt-40 {
+        font-size: 20px !important
+    }
+    .fnt-50 {
+        font-size: 25px !important
+    }
+    .fnt-60 {
+        font-size: 30px !important
+    }
+    .fnt-70 {
+        font-size: 35px !important
+    }
+    .fnt-80 {
+        font-size: 35px !important
+    }
+    .fnt-100 {
+        font-size: 50px !important
+    }
+    .fnt-120 {
+        font-size: 60px !important
+    }
+    .spacer-5 {
+        display: block;
+        height: 3px
+    }
+    .spacer-10 {
+        display: block;
+        height: 5px
+    }
+    .spacer-20 {
+        display: block;
+        height: 10px
+    }
+    .spacer-40 {
+        display: block;
+        height: 20px
+    }
+    .spacer-60 {
+        display: block;
+        height: 30px
+    }
+    .spacer-80 {
+        display: block;
+        height: 40px
+    }
+    .spacer-100 {
+        display: block;
+        height: 50px
+    }
+    .spacer-120 {
+        display: block;
+        height: 60px
+    }
+
+    .remPad {
+        padding-left: 12px !important;
+        padding-right: 12px !important
+    }
+   
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .desktop-view {
+        display: none !important
+    }
+    .mobile-view {
+        display: block !important
+    }
+    .fnt-10 {
+        font-size: 5px !important
+    }
+    .fnt-12 {
+        font-size: 6px !important
+    }
+    .fnt-15 {
+        font-size: 8px !important
+    }
+    .fnt-18 {
+        font-size: 9px !important
+    }
+    .fnt-20 {
+        font-size: 10px !important
+    }
+    .fnt-25 {
+        font-size: 14px !important
+    }
+    .fnt-30 {
+        font-size: 15px !important
+    }
+    .fnt-40 {
+        font-size: 20px !important
+    }
+    .fnt-50 {
+        font-size: 25px !important
+    }
+    .fnt-60 {
+        font-size: 30px !important
+    }
+    .fnt-70 {
+        font-size: 35px !important
+    }
+    .fnt-80 {
+        font-size: 35px !important
+    }
+    .fnt-100 {
+        font-size: 50px !important
+    }
+    .fnt-120 {
+        font-size: 60px !important
+    }
+    .spacer-5 {
+        display: block;
+        height: 3px
+    }
+    .spacer-10 {
+        display: block;
+        height: 5px
+    }
+    .spacer-20 {
+        display: block;
+        height: 10px
+    }
+    .spacer-40 {
+        display: block;
+        height: 20px
+    }
+    .spacer-60 {
+        display: block;
+        height: 30px
+    }
+    .spacer-80 {
+        display: block;
+        height: 40px
+    }
+    .spacer-100 {
+        display: block;
+        height: 50px
+    }
+    .spacer-120 {
+        display: block;
+        height: 60px
+    }
+    .remPad {
+        padding-left: 12px !important;
+        padding-right: 12px !important
+    }
+   
+}

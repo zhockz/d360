@@ -1,0 +1,99 @@
+html,body{}
+html{scroll-behavior: smooth;}
+body{
+	font-family: "Cairo";
+}
+a{
+	color: #656565;
+	text-decoration:none;
+	font-size: 16px;
+	transition: all 300ms ease;
+}
+a:hover{
+	color: #ff0000;
+}
+p{font-size: 16px;}
+div{font-size: 16px;}
+section{font-size: 16px;}
+ul{font-size: 16px;}
+ul>li{font-size: 16px;}
+
+
+h1,h2,h3,h4,h5,h6{
+	line-height: 1;
+	font-weight: bolder;
+}
+
+.fnt-trans{
+	font-family: "Lato" !important;
+/*	direction:rtl;
+	display:block;*/
+}
+
+.bg-white{background-color: #fff;}
+.bg-black{background-color: #000;}
+.bg-orange{background-color: #EB644C;}
+
+
+.spacer-5{display: block; height: 5px;}
+.spacer-10{display: block; height: 10px;}
+.spacer-20{display: block; height: 20px;}
+.spacer-40{display: block; height: 40px;}
+.spacer-60{display: block; height: 60px;}
+.spacer-80{display: block; height: 80px;}
+.spacer-100{display: block; height: 100px;}
+.spacer-120{display: block; height: 120px;}
+
+
+.fnt-10{font-size: 10px !important;}
+.fnt-12{font-size: 12px !important;}
+.fnt-15{font-size: 15px !important;}
+.fnt-18{font-size: 18px !important;}
+.fnt-20{font-size: 20px !important;}
+.fnt-25{font-size: 25px !important;}
+.fnt-30{font-size: 30px !important;}
+.fnt-40{font-size: 40px !important;}
+.fnt-50{font-size: 50px !important;}
+.fnt-60{font-size: 60px !important;}
+.fnt-70{font-size: 70px !important;}
+.fnt-80{font-size: 80px !important;}
+
+.fnt-banner-title{
+	font-size: 100px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.fnt-banner-caption{
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.fnt-black{color: #000;}
+.fnt-white{color: #fff}
+.fnt-orange{color: #EB644C;}
+.fnt-light-gray{color: #BEBEBE;}
+
+.fnt-allCaps{text-transform: uppercase;}
+.fnt-extraBold{font-weight: bolder;}
+.fnt-bold{font-weight: 300;}
+
+.remMar{margin: 0px !important;}
+.remPad{padding: 0px !important}
+.allCaps{text-transform: uppercase;}
+
+
+.fa-mar-right{margin-right: 5px;}
+.fa-mar-left{margin-left: 5px;}
+.fa-mar-right-20{margin-right: 20px;}
+.fa-mar-left-20{margin-left: 20px;}
+
+.hideThis{display: none !important;}
+
+.vh-100{height: 100vh;}
+.vh-50{height: 50vh;}
+.vh-25{height: 25vh;}
+
+.posRel{position: relative;}
+.posAbs{position: absolute;}

@@ -1,0 +1,52 @@
+#main-navigation .navbar{
+
+}
+#main-navigation .navbar-transparent{
+	background-color: transparent !important;
+	padding-top: 3rem;
+	padding-bottom: 0rem;
+	transition: all 300ms ease;
+}
+
+#main-navigation .navbar-dark{
+	background-color: rgba(33, 37, 41, 0.95) !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+	transition: all 300ms ease;
+}
+
+#main-navigation .navbar-transparent .nav-link,
+#main-navigation .navbar-dark .nav-link{
+	color: #fff;
+	transition: all 300ms ease;
+}
+
+#main-navigation .nav-link{
+	font-weight:600;
+	font-size: 20px;
+}
+
+#main-navigation .nav-link:hover{
+	color: #ff0000;
+}
+
+#main-navigation .nav-pad{
+	padding: 8px 3rem;
+}
+
+#main-navigation .nav-pad-lang{
+	padding-left: 3rem;
+}
+
+#main-navigation .logo-hide{
+	opacity:0;
+	position: absolute;
+	top: -50%;
+	transition: all 300ms ease;
+}
+#main-navigation .logo-show{
+	opacity:1;
+	position: unset;
+	top: 0%;	
+	transition: all 300ms ease;
+}

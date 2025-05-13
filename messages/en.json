@@ -1,0 +1,29 @@
+{
+  "SiteName":{
+    "title": "NJT"
+  },
+  "NavbarLinks": {
+    "home": "Home",
+    "homeLink": "Home",
+    "about": "About 360",
+    "aboutLink": "/about",
+    "personal": "Personal",
+    "personalLink": "/personal",
+    "contact": "Contact",
+    "contactLink": "Contact page",
+    "language": "عربي",
+    "languageLink": ""
+  },
+  "HomePage": {
+    "title": "D360"
+  },
+  "AboutPage": {
+    "title": "About"
+  },
+  "TestPage": {
+    "title": "Test"
+  },
+  "ContactPage": {
+    "title": "Contact"
+  }
+}
