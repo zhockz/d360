@@ -118,8 +118,9 @@ h1,h2,h3,h4,h5,h6{
 	position:absolute;
 	width: 100%;
 	color: #fff;
-	top: 10%;
-    transform: translateY(-15%);
+	top: 11%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .banner-caption h2{
 	font-size: 100px;
@@ -140,8 +141,9 @@ h1,h2,h3,h4,h5,h6{
 	position:absolute;
 	width: 100%;
 	color: #fff;
-	top: 15%;
-    transform: translateY(-15%);
+	top: 21%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .banner-caption-page h2{
 	font-size: 100px;
@@ -239,6 +241,10 @@ footer p{
 	background-size: cover;
 }
 
+.logo-white{max-width: 60% !important;}
+
 /*bootstrap alter*/
+
+.container{max-width: 1600px;}
 
 

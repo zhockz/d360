@@ -13,8 +13,8 @@ import {getStrapiData} from "@/lib/StrapiApis";
 import {Lato,Cairo} from "next/font/google";
 import "../locomotive-scroll.css";
 import "../globals.css";
-import "../navigation.css";
 import "../custom.css";
+import "../navigation.css";
 import "../responsive.css";
 
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -39,7 +39,7 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: "D360",
     description: "D360",
-    manifest: 'https://nextjs.org/manifest.json',
+    manifest: '/favicons/manifest.json',
     icons: {
       icon: '/favicons/favicon-32x32.png',
     },
@@ -82,7 +82,7 @@ export default async function RootLayout({
         <script
               src="https://code.jquery.com/jquery-3.6.0.min.js"
               integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-              crossorigin="anonymous"></script>
+              crossOrigin="anonymous"></script>
       </head>
       <body data-scroll-container>
         <NextIntlClientProvider messages={messages}>

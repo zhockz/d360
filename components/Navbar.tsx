@@ -24,8 +24,8 @@ const Navbar = ({ locale }: { locale: string }) => {
 
             <div className="container d-flex align-items-center">
               <Link className="navbar-brand" href={`/${locale}/`}>
-                <Image src={'/logo/logo-main.svg'} alt="" className="img-fluid nav-logo logo-main logo-show" width={65} height={105}/>
-                <Image src={'/logo/logo-white.svg'} alt="" className="img-fluid nav-logo logo-white logo-hide" width={65} height={105}/>
+                <Image src={'/logo/logo-main.svg'} alt="" className="img-fluid nav-logo logo-main logo-show" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                <Image src={'/logo/logo-white.svg'} alt="" className="img-fluid nav-logo logo-white logo-hide" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
               </Link>
             
               <div className="navbar-collapse" id="navbarNav">

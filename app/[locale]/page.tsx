@@ -155,7 +155,7 @@ export default function Home() {
         </div>      
       </section>
 
-      <section id="shariahSection" className="" style={{ 'background-image': 'url(/bg-shariah.png)' }}>
+      <section id="shariahSection" className="" style={{ 'backgroundImage': 'url(/bg-shariah.png)' }}>
         <div className="container-fluid">
           <div className="spacer-100"></div>
           <div className="spacer-80"></div>
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="row">
             <div className="col-md-7">
 
-                <h2 className="fnt-100 fnt-drk-blue fnt-w700">INTERNATIONAL TRANSFERS?</h2>
+                <h2 className="fnt-80 fnt-drk-blue fnt-w700">INTERNATIONAL TRANSFERS?</h2>
                 <p className="fnt-60 fnt-drk-blue fnt-w300">Faster & better rates</p>
                 <p className="fnt-30 fnt-drk-blue fnt-w300">Experience fast global transfers, clear and competitive rates, and full transparency every step of the way</p>
               

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from "next/link";
 
 export async function generateMetadata({ params: { locale } }) {
+  
   // const strapiDataGlobal =  await getStrapiData("/api/global?locale=" + locale);
   // console.log(strapiDataGlobal.data.siteName);
 
@@ -73,15 +74,41 @@ export default function About() {
 
                 </div>
               </div>
-
-            <div className="spacer-100"></div>
-            <div className="spacer-80"></div>          
+        
         </div>
         
       </section>
 
-         
+                
+      <section id="investorSection">
+      
+        <div className="container">
+            <div className="spacer-100"></div>
+            <div className="spacer-80"></div>  
 
+              <div className="row">
+                <div className="col-md-2"></div>
+                <div className="col-md-8">
+                  
+                  <center>
+                    <h2 className="fnt-60 fnt-drk-blue fnt-w700">Our Main Investors</h2> 
+                    <div className="spacer-20"></div>
+
+                    
+                  </center>
+
+
+
+                </div>
+                <div className="col-md-2"></div>
+              </div>
+
+
+            <div className="spacer-100"></div>
+            <div className="spacer-80"></div> 
+        </div>
+
+      </section>
 
 
     </div>
