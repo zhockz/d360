@@ -116,7 +116,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
 	  	</footer>
 
-
+	  	
 
 	);
 

@@ -42,7 +42,6 @@ export default function About() {
             </div>
 
             <div className="spacer-20"></div>
-
             <button className="btn btn-orange btn-lg btn-dark-dl">Download the App</button>
 
           </div>
@@ -54,8 +53,6 @@ export default function About() {
       <section id="counterSection" data-scroll-section>
         <div className="container">
           <div className="spacer-100"></div>
-
-
 
             <div className="row">
               <div className="col-6 col-md-3">
@@ -235,7 +232,7 @@ export default function About() {
       
       </section>
 
-      <section className="faqSection" data-scroll-section>
+      <section id="faqSection" data-scroll-section>
         <div className="container">
           <div className="spacer-100"></div>
 
@@ -246,13 +243,13 @@ export default function About() {
 
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingOne">
-                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                   Is D360 Bank a licensed bank in Saudi Arabia?
                 </button>
               </h2>
-              <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p className="fnt-20">D360 Bank is licensed by the council of Ministers Resolution and subject to the supervision of Saudi Central Bank</p>
                 </div>
               </div>
             </div>
@@ -265,7 +262,7 @@ export default function About() {
               </h2>
               <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p className="fnt-20">It's simple: Download the app, fill in your details, and complete the registration steps. Your account will be ready in 2 minutes.</p>
                 </div>
               </div>
             </div>
@@ -278,7 +275,7 @@ export default function About() {
               </h2>
               <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p className="fnt-20">Yes, all products and services of D360 Bank are compliant with Islamic Shariah principles. Therefore, a fully independent Shariah board has been established to oversee all the bank's operations, products, and services.</p>
                 </div>
               </div>
             </div>
@@ -291,7 +288,7 @@ export default function About() {
               </h2>
               <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p className="fnt-20">It's simple: Download the app, fill in your details, and complete the registration steps. Your account will be ready in 2 minutes.</p>
                 </div>
               </div>
             </div>
@@ -301,6 +298,86 @@ export default function About() {
 
           <div className="spacer-100"></div>
         </div>
+      
+      </section>
+
+      <section id="helpSection" className="bannerCover" style={{ 'backgroundImage': 'url(/about/helping.png)' }} data-scroll-section>
+        <div className="container">
+          <div className="spacer-100"></div>
+          <div className="spacer-80"></div>
+
+          <center>
+            <h2 className="fnt-60 fnt-drk-blue fnt-w700">Helping you wherever you are</h2>
+            <div className="row">
+              <div className="col-md-2"></div>
+              <div className="col-md-8">
+                <p className="fnt-20 fnt-drk-blue">Your opinion matters because you are at the heart of everything we do. Have a question, feedback, or even a complaint? Our team is here for you</p>
+
+                  <div className="spacer-20"></div>
+                  <Link href="" className="btn btn-orange btn-lg btn-dl">Contact US</Link>                 
+              </div>
+              <div className="col-md-2"></div>
+            </div>
+            
+          </center>
+
+          <div className="spacer-80"></div>
+          <div className="spacer-100"></div>
+        </div>
+        
+      </section>
+
+      <section id="contactSection" data-scroll-section>
+        <div className="container">
+          <div className="spacer-100"></div>
+
+          <div className="row d-flex align-items-center">
+            <div className="col-md-4">
+              <center>
+                <Image src={'/about/reach.png'} alt="" className="img-fluid borded-img" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+              </center>
+            </div>
+
+            <div className="col-md-1"></div>
+
+            <div className="col-md-7">
+
+              <h4 className="fnt-40 fnt-drk-blue fnt-w700">How to Reach Us?</h4>
+
+              <div className="row">
+
+                <div className="col-md-4">
+                  <p className="fnt-20 fnt-light-gray">Inside Saudi Arabia</p>
+                  <p className="fnt-20 fnt-drk-blue">8001244410</p>
+                </div>
+
+                <div className="col-md-4">
+                  <p className="fnt-20 fnt-light-gray">Outside Saudi Arabia</p>
+                  <p className="fnt-20 fnt-drk-blue">00966920024360</p>
+                </div>
+
+                <div className="col-md-4">
+                  <p className="fnt-20 fnt-light-gray">Email</p>
+                  <p className="fnt-20 fnt-drk-blue">test@d360bank.com</p>
+                </div>
+
+              </div>
+
+              <div className="spacer-40"></div>
+
+              <h4 className="fnt-30 fnt-drk-blue fnt-w700">Via the App</h4>
+
+              <p className="fnt-20 fnt-drk-blue">Reach out through the Help section. Send us a message or request a callback, and we'll be there for you.</p>
+
+              <div className="spacer-20"></div>
+              <Link href="" className="btn btn-orange btn-lg btn-dl">Download app</Link>              
+
+            </div>
+          </div>
+
+          <div className="spacer-100"></div>
+        </div>
+        
       </section>
 
 

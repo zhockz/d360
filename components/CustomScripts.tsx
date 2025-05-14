@@ -12,22 +12,21 @@ const CustomScripts = ({ locale }: { locale: string }) => {
 
      useEffect(() => {
 
-        var aScript = document.createElement('script');
-        aScript.type = 'text/javascript';
+       //  var aScript = document.createElement('script');
+       //  aScript.type = 'text/javascript';
 
-        document.head.appendChild(aScript);
-       aScript.onload = () => {};
+       //  document.head.appendChild(aScript);
+       // aScript.onload = () => {};
 
       import('locomotive-scroll').then((locomotiveModule) => {
 
         const scroll = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
-            smooth: true
+            smooth: true,
+            smoothMobile: false,
         });  
 
-        // scroll.destroy();
-        // scroll.init();
-         // scroll.update();
+
         scroll.on("scroll",(instance) => {
 
             //console.log(instance.scroll.y);
@@ -54,16 +53,41 @@ const CustomScripts = ({ locale }: { locale: string }) => {
                     $("#main-navigation .logo-white").addClass("logo-hide");
                     $("#main-navigation .logo-white").removeClass("logo-show");                    
 
-                }    
-
+                }     
         });          
 
-
+       new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"))
+        return () => scroll.destroy();
       });
 
+      $(".ct-bg-left").on("mouseenter", function(){
+        $(this).addClass("slide-right");
+        $(".ct-bg-right").addClass("fade-card");
+        $(".ct-phone").addClass("fade-card");
+      });
 
+      $(".ct-bg-left").on("mouseleave", function(){
+        $(this).removeClass("slide-right");
+        $(".ct-bg-right").removeClass("fade-card");
+        $(".ct-phone").removeClass("fade-card");
+      });
 
-    });
+      $(".ct-bg-right").on("mouseenter", function(){
+        $(this).addClass("slide-left");
+        $(".ct-bg-left").addClass("fade-card");
+        $(".ct-card").addClass("fade-card");
+      });
+
+      $(".ct-bg-right").on("mouseleave", function(){
+        $(this).removeClass("slide-left");
+        $(".ct-bg-left").removeClass("fade-card");
+        $(".ct-card").removeClass("fade-card");
+      });
+  
+
+      
+
+    },[]);
 
 
 };

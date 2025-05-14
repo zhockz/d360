@@ -84,19 +84,23 @@ export default async function RootLayout({
               integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
               crossOrigin="anonymous"></script>
       </head>
-      <body data-scroll-container>
-        <NextIntlClientProvider messages={messages}>
+      <body>
+      
+        <div data-scroll-container>
+          <NextIntlClientProvider messages={messages}>
 
-            <Navbar locale={locale} />
+              <Navbar locale={locale} />
 
-            {children}
+              {children}
 
-            <Footer locale={locale} />
-            <BootstrapClient />
-            <CustomScripts locale={locale} />
+              <Footer locale={locale} />
+ 
+             
+          </NextIntlClientProvider>
+        </div> 
 
-        </NextIntlClientProvider>
-
+        <BootstrapClient />
+        <CustomScripts locale={locale} />
       </body>
     </html>
   );

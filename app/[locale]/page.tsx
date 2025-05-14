@@ -56,6 +56,7 @@ export default function Home() {
 
           </div>
         </div>
+      
       </section>
 
       <section id="cardSection" className="bg-beige" data-scroll-section>
@@ -99,8 +100,8 @@ export default function Home() {
           <div className="spacer-100"></div>
 
           <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
+            <div className="col-md-1"></div>
+            <div className="col-md-10">
               <center> 
                 <h2 className="fnt-60 fnt-drk-blue fnt-w700">A shariah-compliant Saudi Digital Bank that aims to provide the best financial experience in the Kingdom.</h2> 
 
@@ -135,34 +136,44 @@ export default function Home() {
 
               </center>              
             </div>
-            <div className="col-md-2"></div>
+            <div className="col-md-1"></div>
           </div>
 
         </div>
         
         <div className="spacer-100"></div>
+      
       </section>
 
-      <section id="cardTypeSection" className="bg-black"  data-scroll-section>
-        <div className="container-fluid">
+      <section id="cardTypeSection" className="bg-black posRel vh-75"  data-scroll-section>
+        <div className="container-fluid posRel vh-75 remPad">
 
-
-          <div className="row vh-75 posRel">
-            <div className="col-md-6 bannerCover rempad" style={{ 'backgroundImage': 'url(/bg-ct-left.png)' }}>
+          <div className="ct-anim-bg vh-75">
               
-            </div>
-            <div className="col-md-6 bannerCover rempad" style={{ 'backgroundImage': 'url(/bg-ct-right.png)' }}>
+              <div className="vh-75 ct-card">
+                <Image src={'/card/card.png'} alt="" className="img-fluid" width={300} height={500}/>
+              </div> 
 
-            </div>
+              <div className="vh-75 ct-bg ct-bg-left">
+                <Image src={'/home/bg-ct-left.jpg'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}/>
+              </div>
+
+              <div className="vh-75 ct-phone">
+                <Image src={'/home/ct-phone.png'} alt="" className="img-fluid" width={350} height={500}/>
+              </div>              
+
+              <div className="vh-75 ct-bg ct-bg-right">
+                <Image src={'/home/bg-ct-right.jpg'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}/>
+              </div>
+
           </div>
 
 
-
-
         </div>      
+      
       </section>
 
-      <section id="shariahSection" className="" style={{ 'backgroundImage': 'url(/bg-shariah.png)' }} data-scroll-section>
+      <section id="shariahSection" className="" style={{ 'backgroundImage': 'url(/home/bg-shariah.png)' }} data-scroll-section>
         <div className="container-fluid">
           <div className="spacer-100"></div>
 
@@ -184,6 +195,7 @@ export default function Home() {
             </div>
           <div className="spacer-100"></div>       
         </div>      
+      
       </section>  
 
       <section id="transferSection" className="" data-scroll-section>     
@@ -203,7 +215,7 @@ export default function Home() {
             <div className="col-md-5">
 
               <center>
-                <Image src={'/icon-app.png'} alt="" className="img-fluid" width={520} height={600}/>
+                <Image src={'/home/icon-app.png'} alt="" className="img-fluid" width={520} height={600}/>
               </center>
 
 
@@ -213,6 +225,7 @@ export default function Home() {
           
           <div className="spacer-100"></div>           
         </div>            
+      
       </section>            
 
 
