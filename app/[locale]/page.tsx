@@ -16,17 +16,17 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 
-
+ 
 export default function Home() {
 
   const t = useTranslations("HomePage");
 
-  
   return (
 
-    <div className="main-content" data-scroll-section>
 
-      <section id="bannerSection" className="">
+    <div className="main-content">
+
+      <section id="bannerSection" className="" data-scroll-section>
 
         <div className="banner-media">
           <div className="container-fluid remPad">
@@ -58,10 +58,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="cardSection" className="bg-beige">
+      <section id="cardSection" className="bg-beige" data-scroll-section>
         <div className="container">
           <div className="spacer-100"></div>
-          <div className="spacer-80"></div>
 
           <div className="row">
             <div className="col-md-6">
@@ -89,16 +88,15 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="spacer-80"></div>
+
           <div className="spacer-100"></div>  
         </div>
 
       </section>
 
-      <section id="infoSection">
+      <section id="infoSection" data-scroll-section>
         <div className="container">
           <div className="spacer-100"></div>
-          <div className="spacer-80"></div>
 
           <div className="row">
             <div className="col-md-2"></div>
@@ -142,23 +140,31 @@ export default function Home() {
 
         </div>
         
-        <div className="spacer-40"></div>
         <div className="spacer-100"></div>
       </section>
 
-      <section id="cardTypeSection">
+      <section id="cardTypeSection" className="bg-black"  data-scroll-section>
         <div className="container-fluid">
-          <div className="spacer-100"></div>
-          <div className="spacer-80"></div>
 
-          
+
+          <div className="row vh-75 posRel">
+            <div className="col-md-6 bannerCover rempad" style={{ 'backgroundImage': 'url(/bg-ct-left.png)' }}>
+              
+            </div>
+            <div className="col-md-6 bannerCover rempad" style={{ 'backgroundImage': 'url(/bg-ct-right.png)' }}>
+
+            </div>
+          </div>
+
+
+
+
         </div>      
       </section>
 
-      <section id="shariahSection" className="" style={{ 'backgroundImage': 'url(/bg-shariah.png)' }}>
+      <section id="shariahSection" className="" style={{ 'backgroundImage': 'url(/bg-shariah.png)' }} data-scroll-section>
         <div className="container-fluid">
           <div className="spacer-100"></div>
-          <div className="spacer-80"></div>
 
             <div className="container">
 
@@ -169,22 +175,20 @@ export default function Home() {
 
                     <div className="spacer-20"></div>
 
-                    <Link href="" className="btn btn-dark btn-lg btn-dark-dl">Read more</Link>
+                    <Link href="" className="btn btn-transparent btn-lg btn-dark-dl">Read more</Link>
 
                 </div>
                 <div className="col-md-5"></div>
               </div>
               
             </div>
-          <div className="spacer-100"></div>
-          <div className="spacer-80"></div>          
+          <div className="spacer-100"></div>       
         </div>      
       </section>  
 
-      <section id="transferSection" className="">     
+      <section id="transferSection" className="" data-scroll-section>     
         <div className="container">
-          <div className="spacer-100"></div>
-          <div className="spacer-80"></div>         
+          <div className="spacer-100"></div>    
 
           <div className="row">
             <div className="col-md-7">
@@ -207,8 +211,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="spacer-100"></div>
-          <div className="spacer-80"></div>            
+          <div className="spacer-100"></div>           
         </div>            
       </section>            
 

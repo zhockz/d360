@@ -25,6 +25,9 @@ const CustomScripts = ({ locale }: { locale: string }) => {
             smooth: true
         });  
 
+        // scroll.destroy();
+        // scroll.init();
+         // scroll.update();
         scroll.on("scroll",(instance) => {
 
             //console.log(instance.scroll.y);
@@ -55,7 +58,10 @@ const CustomScripts = ({ locale }: { locale: string }) => {
 
         });          
 
+
       });
+
+
 
     });
 
