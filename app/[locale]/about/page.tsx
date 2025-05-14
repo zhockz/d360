@@ -4,7 +4,6 @@ import { getTranslations, getMessages } from "next-intl/server";
 import {getStrapiData} from "@/lib/StrapiApis";
 import Image from 'next/image';
 import Link from "next/link";
-import LocomotiveScroll from 'locomotive-scroll';
 
 export async function generateMetadata({ params: { locale } }) {
   
