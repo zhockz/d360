@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomScripts from "@/components/CustomScripts";
+import LocomotiveScripts from "@/components/LocomotiveScripts";
 import { NextIntlClientProvider, hasLocale} from "next-intl";
 import { getTranslations, getMessages } from "next-intl/server";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -85,7 +86,7 @@ export default async function RootLayout({
               crossOrigin="anonymous"></script>
       </head>
       <body>
-      
+
         <div data-scroll-container>
           <NextIntlClientProvider messages={messages}>
 
@@ -100,6 +101,7 @@ export default async function RootLayout({
         </div> 
 
         <BootstrapClient />
+        <LocomotiveScripts locale={locale} />
         <CustomScripts locale={locale} />
       </body>
     </html>

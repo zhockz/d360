@@ -152,6 +152,14 @@ export default function Home() {
               
               <div className="vh-75 ct-card">
                 <Image src={'/card/card.png'} alt="" className="img-fluid" width={300} height={500}/>
+                <div className="ct-caption-physical">
+                  <center>
+                    <p className="fnt-30 fnt-white fnt-bold remMar">Physical</p>
+                    <p className="fnt-15 fnt-white remMar">We got you covered! Decorate your wallet with our cards and withdraw from ATMs globally with zero fees</p>
+                    <div className="spacer-20"></div>
+                    <Link href="" className="btn btn-white btn-sm btn-dl">Create a Card</Link>
+                  </center>
+                </div>
               </div> 
 
               <div className="vh-75 ct-bg ct-bg-left">
@@ -160,6 +168,14 @@ export default function Home() {
 
               <div className="vh-75 ct-phone">
                 <Image src={'/home/ct-phone.png'} alt="" className="img-fluid" width={350} height={500}/>
+                <div className="ct-caption-digital">
+                  <center>
+                    <p className="fnt-30 fnt-white fnt-bold remMar">Digital</p>
+                    <p className="fnt-15 fnt-white remMar">Create virtual card instantly adn add into Apple Pay or madaPay to start spending the right way</p>
+                    <div className="spacer-20"></div>
+                    <Link href="" className="btn btn-white btn-sm btn-dl">Create a Card</Link>
+                  </center>
+                </div>                
               </div>              
 
               <div className="vh-75 ct-bg ct-bg-right">

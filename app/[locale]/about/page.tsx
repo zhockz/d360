@@ -203,7 +203,131 @@ export default function About() {
 
                     <div className="tab-pane fade show active" id="bod">
                       <div className="spacer-40"></div>
-                        BOD
+
+                        <div className="teamList">
+                          <div className="row">
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/taha.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Taha Al-Quweiz</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Chairman</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/zaki.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Zaki Alshowaier</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Vice Chairman</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/ibrahim.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Ibrahim Al Jammaz</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/bassem.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Bassem Al Sallom</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/fahad.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Fahad AlJomaih</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>    
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/nouf.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Nouf AlJoaid</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>  
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/tim.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Tim Brooke</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div> 
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/mudassir.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Mudassir Sheikha</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>  
+
+                            <div className="col-md-3">
+                              <div className="teamDetails posRel">
+                                <div className="teamImg">
+                                  <Image src={'/about/team/faraz.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                                </div>
+                                <div className="teamCaption">
+                                  <p className="fnt-20 fnt-bold remMar">Faraz Khalid</p>
+                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                </div>                              
+                              </div>
+                              <div className="spacer-40"></div>
+                            </div>                                                           
+
+                          </div>
+                        </div>
+
+
                       <div className="spacer-40"></div>
                     </div>
 
