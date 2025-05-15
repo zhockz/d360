@@ -96,28 +96,30 @@ export default function Home() {
       </section>
 
       <section id="infoSection" data-scroll-section>
-        <div className="container">
+        <div className="container" data-scroll-sticky>
           <div className="spacer-100"></div>
 
           <div className="row">
             <div className="col-md-1"></div>
             <div className="col-md-10">
               <center> 
-                <h2 className="fnt-60 fnt-drk-blue fnt-w700">A shariah-compliant Saudi Digital Bank that aims to provide the best financial experience in the Kingdom.</h2> 
+                <h2 className="fnt-60 fnt-drk-blue fnt-w700" data-scroll data-scroll-speed="3" data-scroll-repeat>
+                A shariah-compliant Saudi Digital Bank that aims to provide the best financial experience in the Kingdom.
+                </h2> 
 
                 <div className="spacer-40"></div>
 
                 <div className="row">
 
-                  <div className="col-md-4">
+                  <div className="col-md-4" data-scroll data-scroll-speed="4" data-scroll-repeat>
                     <center>
-                      <p className="fnt-60 fnt-orange fnt-w700">1st</p>
+                      <p className="fnt-60 fnt-orange fnt-w700" >1st</p>
                       <p className="fnt-30 fnt-light-gray fnt-w600">Saudi Digital Bank</p>
                     </center>
                     <div className="spacer-40"></div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4" data-scroll data-scroll-speed="4" data-scroll-repeat>
                     <center>
                       <p className="fnt-60 fnt-orange fnt-w700">+1M</p>
                       <p className="fnt-30 fnt-light-gray fnt-w600">Users</p>
@@ -125,7 +127,7 @@ export default function Home() {
                     <div className="spacer-40"></div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4" data-scroll data-scroll-speed="4" data-scroll-repeat>
                     <center>
                       <p className="fnt-60 fnt-orange fnt-w700">+70</p>
                       <p className="fnt-30 fnt-light-gray fnt-w600">Countries</p>

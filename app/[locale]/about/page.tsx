@@ -54,7 +54,7 @@ export default function About() {
           <div className="spacer-100"></div>
 
             <div className="row">
-              <div className="col-6 col-md-3">
+              <div className="col-6 col-md-3 anim-opacity-hide"  data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
                     <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
@@ -64,7 +64,7 @@ export default function About() {
                 <div className="spacer-40"></div>
               </div>
               
-              <div className="col-6 col-md-3">
+              <div className="col-6 col-md-3 anim-opacity-hide" data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
                     <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
@@ -74,7 +74,7 @@ export default function About() {
                 <div className="spacer-40"></div>
               </div>
 
-              <div className="col-6 col-md-3">
+              <div className="col-6 col-md-3 anim-opacity-hide" data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
                     <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
@@ -84,7 +84,7 @@ export default function About() {
                 <div className="spacer-40"></div>
               </div>
 
-              <div className="col-6 col-md-3">
+              <div className="col-6 col-md-3 anim-opacity-hide" data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
                     <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
@@ -332,13 +332,13 @@ export default function About() {
 
                     <div className="tab-pane fade" id="mt">
                      <div className="spacer-40"></div>
-                      MT
+                      MANAGEMENT TEAM
                       <div className="spacer-40"></div>
                     </div>
 
                     <div className="tab-pane fade" id="sh">
                      <div className="spacer-40"></div>
-                      SH
+                      SHARIAH
                       <div className="spacer-40"></div>
                     </div>
                   </div>                  
