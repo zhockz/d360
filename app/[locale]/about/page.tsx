@@ -5,17 +5,17 @@ import {getStrapiData} from "@/lib/StrapiApis";
 import Image from 'next/image';
 import Link from "next/link";
 
-export async function generateMetadata({ params: { locale } }) {
+// export async function generateMetadata({ params: { locale } }) {
   
-  // const strapiDataGlobal =  await getStrapiData("/api/global?locale=" + locale);
-  // console.log(strapiDataGlobal.data.siteName);
+//   // const strapiDataGlobal =  await getStrapiData("/api/global?locale=" + locale);
+//   // console.log(strapiDataGlobal.data.siteName);
 
-  const t = await getTranslations("AboutPage");
+//   const t = await getTranslations("AboutPage");
 
-  return {
-    title: t('title')
-  };
-}
+//   return {
+//     title: t('title')
+//   };
+// }
 
 
 

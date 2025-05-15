@@ -4,16 +4,16 @@ import {getStrapiData} from "@/lib/StrapiApis";
 import Image from 'next/image';
 import Link from "next/link";
 
-export async function generateMetadata({ params: { locale } }) {
-  // const strapiDataGlobal =  await getStrapiData("/api/global?locale=" + locale);
-  // console.log(strapiDataGlobal.data.siteName);
+// export async function generateMetadata({ params: { locale } }) {
+//   // const strapiDataGlobal =  await getStrapiData("/api/global?locale=" + locale);
+//   // console.log(strapiDataGlobal.data.siteName);
 
-  const t = await getTranslations("HomePage");
+//   const t = await getTranslations("HomePage");
 
-  return {
-    title: t('title')
-  };
-}
+//   return {
+//     title: t('title')
+//   };
+// }
 
 
  

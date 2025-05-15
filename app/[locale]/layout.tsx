@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomScripts from "@/components/CustomScripts";
 import LocomotiveScripts from "@/components/LocomotiveScripts";
-import { NextIntlClientProvider, hasLocale} from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, getMessages } from "next-intl/server";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapClient from "@/components/BootstrapClient";
@@ -33,7 +33,7 @@ const cairoFont = Cairo({
 });
 
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata() {
 
   // const strapiDataGlobal =  await getStrapiData("/api/global?locale=" + locale);
 
@@ -80,10 +80,10 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={dir}>
       <head> 
-        <script
+{/*        <script
               src="https://code.jquery.com/jquery-3.6.0.min.js"
               integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-              crossOrigin="anonymous"></script>
+              crossOrigin="anonymous"></script>*/}
       </head>
       <body>
 
