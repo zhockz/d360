@@ -1,24 +1,87 @@
 {
   "SiteName":{
-    "title": "NJT"
+    "title": "D360"
   },
   "NavbarLinks": {
     "home": "Home",
     "homeLink": "Home",
     "about": "About 360",
     "aboutLink": "/about",
-    "personal": "Personal",
-    "personalLink": "/personal",
-    "contact": "Contact",
-    "contactLink": "Contact page",
     "language": "عربي",
     "languageLink": ""
   },
+  "FooterLinks":{},
+  "Buttons":{
+    "dpApp": "Download the App",
+    "createCard": "Create a Card",
+    "readMore": "Read More"
+  },
   "HomePage": {
-    "title": "D360"
+    "title": "D360",
+    "bannerSection": {
+      "title": "YOUR MONEY IN MOTION",
+      "subTitle": "Bank seamlessly across borders and currencies, wherever you go"
+    },
+    "cardSection": {
+      "title1": "BANK ANYTIME, ANYWHERE",
+      "subTitle1": "Because your world never stops, and neither should your bank.",
+      "title2": "SECURITY YOU CAN TRUST",
+      "subTitle2": "Your money and data are protected with top-tier security.",
+      "title3": "DIRECT & TRANSPARENT",
+      "subTitle3": "No hidden fees—what you see is what you get.",
+      "title4": "BANKING IN A BLINK",
+      "subTitle4": "All your banking services are completed in minutes."
+    },
+    "infoSection": {
+      "title": "A shariah-compliant Saudi Digital Bank that aims to provide the best financial experience in the Kingdom.",
+      "sdb": "Saudi Digital Bank",
+      "counter1": "1st",
+      "users": "Users",
+      "counter2": "+1M",
+      "countries": "Countires",
+      "counter3": "+70"
+    },
+    "cardType": {
+      "physical": "Physical Card",
+      "physicalDesc": "We got you covered! Decorate your wallet with our cards and withdraw from ATMs globally with zero fees",
+      "digital": "Digital Card",
+      "digitalDesc": "Create virtual card instantly adn add into Apple Pay or madaPay to start spending the right way"
+    },
+    "shariahSection":{
+      "title": "SHARIAH COMPLIANT",
+      "subTitle": "D360 Bank is committed to the principles of Islamic Shariah and ensuring compliance in all its banking transactions. To achieve this, an independent Shariah committee has been established to oversee all the bank's operations, products, and services."
+    },
+    "transferSection": {
+      "title": "INTERNATIONAL TRANSFERS?",
+      "subTitle": "Faster & better rates",
+      "description": "Experience fast global transfers, clear and competitive rates, and full transparency every step of the way"
+    }
   },
   "AboutPage": {
-    "title": "About"
+    "title": "D360 - About",
+    "description": "",
+    "bannerSection": {
+      "title": "About",
+      "subTitle": "D360"
+    },
+    "counterSection": {
+      "counter1": "Lorem Ipsum",
+      "counterDesc1": "+250K",
+      "counter2": "Lorem Ipsum",
+      "counterDesc2": "+500K",
+      "counter3": "Lorem Ipsum",
+      "counterDesc3": "+300k",
+      "counter4": "Lorem Ipsum",
+      "counterDesc4": "+400k"
+    },
+    "storySection": {
+      "title": "Our Story",
+      "description": {
+        "par1": "A Saudi digital bank, fully Sharia-compliant and dedicated to delivering the best banking experience for everyone in Saudi Arabia.",
+        "par2": "It’s not just about banking services, we’re redefining what banking means. A bank that’s close to you, adapts to your needs, designed for you, and always one step ahead, with products and services that fully comply with Islamic Sharia. We are leading the next era of banking, smarter, faster, and always one step ahead.",
+        "par3": "We believe banking should be easy, straightforward, and grounded in trust and transparency."
+      }
+    }
   },
   "TestPage": {
     "title": "Test"

@@ -1,24 +1,88 @@
 {
   "SiteName":{
-    "title": "NJT"
+    "title": "D360"
   },
   "NavbarLinks": {
     "home": "Home",
     "homeLink": "Home",
     "about": "About 360",
     "aboutLink": "/about",
-    "personal": "Personal",
-    "personalLink": "/personal",
-    "contact": "Contact",
-    "contactLink": "Contact page",
-    "language": "English",
+    "language": "عربي",
     "languageLink": ""
   },
+  "FooterLinks":{},
+  "Buttons":{
+    "dpApp": "حمّل التطبيق",
+    "createCard": "أصدر بطاقتك",
+    "readMore": "اقرأ المزيد"
+  },
   "HomePage": {
-    "title": "D360"
+    "title": "D360",
+    "description":"",
+    "bannerSection": {
+      "title": "أموالك تتخطى الحدود",
+      "subTitle": "تجربة بنكية سهلة وسريعة، ما يحدّها أي مكان أو عملة"
+    },
+      "cardSection": {
+      "title1": " نتكيّف معك",
+      "subTitle1": "حياتك تتغير؟ خدماتنا مرنة ودايم معك، بأي وقت وأي مكان",
+      "title2": "أمانك مضمون",
+      "subTitle2": "معايير حماية عالمية تحمي بياناتك وعملياتك",
+      "title3": "على المكشوف",
+      "subTitle3": "بدون رسوم مخفية، كل التفاصيل واضحة قدامك",
+      "title4": "بلمح البصر",
+      "subTitle4": "كل عملياتك البنكية تنجزها بدقائق"
+    },
+    "infoSection": {
+      "title": "A shariah-compliant Saudi Digital Bank that aims to provide the best financial experience in the Kingdom.",
+      "sdb": "Saudi Digital Bank",
+      "counter1": "1st",
+      "users": "Users",
+      "counter2": "+1M",
+      "countries": "Countires",
+      "counter3": "+70"
+    },
+    "cardType": {
+      "physical": "بطاقة بلاستيكية ",
+      "physicalDesc": "زيّن محفظتك ببطاقتنا، واسحب براحتك من أي صرافة في العالم و بدون رسوم",
+      "digital": "بطاقة رقمية",
+      "digitalDesc": "أصدر بطاقتك الرقمية وأضفها لمحفظة  Apple payأو مدى Payواستخدم بطاقتك فورًا."
+    },
+    "shariahSection":{
+      "title": "اللجنة الشرعية",
+      "subTitle": "يلتزم مصرف D360 بمبادئ الشريعة الإسلامية ومراعاتها في جميع تعاملاته المصرفية، ولتحقيق ذلك تم إنشاء لجنة شرعية مستقلة بالكامل لمراقبة جميع عمليات المصرف ومنتجاته وخدماته."
+    },
+    "transferSection": {
+      "title": "تحويل دولي؟",
+      "subTitle": "سريع وبأسعار تنافسية!",
+      "description": "حوّل براحتك حوالات دولية سريعة بسعر واضح و منافس، وبشفافية في كل خطوة"
+    }
   },
   "AboutPage": {
-    "title": "About"
+    "title": "D360 - About",
+    "description": "",
+    "bannerSection": {
+      "title": "عن بنك ",
+      "subTitle": "D360"
+    },
+    "counterSection": {
+      "counter1": "لوريم إيبسوم",
+      "counterDesc1": "+250K",
+      "counter2": "لوريم إيبسوم",
+      "counterDesc2": "+500K",
+      "counter3": "لوريم إيبسوم",
+      "counterDesc3": "+300k",
+      "counter4": "لوريم إيبسوم",
+      "counterDesc4": "+400k"
+    },
+    "storySection": {
+      "title": "قصتنا",
+      "description": {
+        "par1": "بنك D360 هو بنك سعودي رقمي متوافق مع أحكام الشريعة الإسلامية، يهدف إلى تقديم أفضل تجربة بنكية لكل شخص في السعودية. الموضوع مو مجرد خدمات بنكية، حنا هنا لتغيير مفهوم التجربة البنكية.. ",
+        "par2": ". بنك قريب من الناس، مرن، ويفهم احتياجاتهم، بخدمات مبتكرة، ومنتجات وعمليات متوافقة مع أحكام الشريعة الإسلامية. نعيد تعريف التجربة البنكية، ونظل دائمًا سابقين بخطوة بحلول ذكية وخدمات مبتكرة. ",
+        "par3": ". نؤمن أن التجربة البنكية لازم تكون بسيطة، سلسة، ومبنية على الثقة والوضوح"
+      }
+    }
   },
   "TestPage": {
     "title": "Test"

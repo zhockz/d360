@@ -21,7 +21,7 @@ import Link from "next/link";
 
 export default function About() {
 
-  const t = useTranslations("AboutPage");
+  const t = useTranslations();
   
   return (
 
@@ -35,13 +35,13 @@ export default function About() {
 
             <div className="row">
               <div className="col-md-6">
-                <h2 className="banner-title-page fnt-drk-blue">ABOUT<br/>D360</h2>
+                <h2 className="banner-title-page fnt-drk-blue">{t("AboutPage.bannerSection.title")}<br/>{t("AboutPage.bannerSection.subTitle")}</h2>
               </div>
               <div className="col-md-6"></div>
             </div>
 
             <div className="spacer-20"></div>
-            <button className="btn btn-orange btn-lg btn-dark-dl">Download the App</button>
+            <button className="btn btn-orange btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>
 
           </div>
           <div className="spacer-100"></div>         
@@ -57,8 +57,8 @@ export default function About() {
               <div className="col-6 col-md-3 anim-opacity-hide"  data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
-                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
-                    <p className="fnt-60 fnt-orange fnt-w700">+250K</p>
+                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">{t("AboutPage.counterSection.counter1")}</h4>
+                    <p className="fnt-60 fnt-orange fnt-w700 force-trans">{t("AboutPage.counterSection.counterDesc1")}</p>
                   </center>
                 </div>              
                 <div className="spacer-40"></div>
@@ -67,8 +67,8 @@ export default function About() {
               <div className="col-6 col-md-3 anim-opacity-hide" data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
-                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
-                    <p className="fnt-60 fnt-orange fnt-w700">+500K</p>
+                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">{t("AboutPage.counterSection.counter2")}</h4>
+                    <p className="fnt-60 fnt-orange fnt-w700 force-trans">{t("AboutPage.counterSection.counterDesc2")}</p>
                   </center>
                 </div>              
                 <div className="spacer-40"></div>
@@ -77,8 +77,8 @@ export default function About() {
               <div className="col-6 col-md-3 anim-opacity-hide" data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
-                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
-                    <p className="fnt-60 fnt-orange fnt-w700">+300K</p>
+                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">{t("AboutPage.counterSection.counter3")}</h4>
+                    <p className="fnt-60 fnt-orange fnt-w700 force-trans">{t("AboutPage.counterSection.counterDesc3")}</p>
                   </center>
                 </div>              
                 <div className="spacer-40"></div>
@@ -87,8 +87,8 @@ export default function About() {
               <div className="col-6 col-md-3 anim-opacity-hide" data-scroll-class="anim-opacity-show" data-scroll  data-scroll-speed="4" >
                 <div className="about-counter">
                   <center>
-                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">Lorem Ipsum</h4>
-                    <p className="fnt-60 fnt-orange fnt-w700">+400K</p>
+                    <h4 className="fnt-30 fnt-drk-blue fnt-w300">{t("AboutPage.counterSection.counter4")}</h4>
+                    <p className="fnt-60 fnt-orange fnt-w700 force-trans">{t("AboutPage.counterSection.counterDesc4")}</p>
                   </center>
                 </div>              
                 <div className="spacer-40"></div>
@@ -113,12 +113,12 @@ export default function About() {
 
                 <div className="col-md-6">
 
-                    <h2 className="fnt-60 fnt-drk-blue fnt-w700">Our Story</h2> 
+                    <h2 className="fnt-60 fnt-drk-blue fnt-w700">{t("AboutPage.storySection.title")}</h2> 
                     <div className="spacer-20"></div>
 
-                    <p className="fnt-25">A Saudi digital bank, fully Sharia-compliant and dedicated to delivering the best banking experience for everyone in Saudi Arabia. </p>
-                    <p className="fnt-25">It’s not just about banking services, we’re redefining what banking means. A bank that’s close to you, adapts to your needs, designed for you, and always one step ahead, with products and services that fully comply with Islamic Sharia. We are leading the next era of banking, smarter, faster, and always one step ahead.</p>
-                    <p className="fnt-25">We believe banking should be easy, straightforward, and grounded in trust and transparency.</p>
+                    <p className="fnt-25">{t("AboutPage.storySection.description.par1")}</p>
+                    <p className="fnt-25">{t("AboutPage.storySection.description.par2")}</p>
+                    <p className="fnt-25">{t("AboutPage.storySection.description.par3")}</p>
 
                 </div>
               </div>

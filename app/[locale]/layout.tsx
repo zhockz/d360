@@ -7,16 +7,18 @@ import { getTranslations, getMessages } from "next-intl/server";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapClient from "@/components/BootstrapClient";
 import { Html, Head, Main, NextScript } from 'next/document';
+import CustomStyles from "@/components/CustomStyles";
 import Script from 'next/script';
 import $ from 'jquery';
 
 import {getStrapiData} from "@/lib/StrapiApis";
-import {Lato,Cairo} from "next/font/google";
-import "../locomotive-scroll.css";
-import "../globals.css";
-import "../custom.css";
-import "../navigation.css";
-import "../responsive.css";
+import {Lato,Tajawal} from "next/font/google";
+import "../styles/bootstrap-rtl.css";
+import "../styles/locomotive-scroll.css";
+import "../styles/globals.css";
+import "../styles/custom.css";
+import "../styles/navigation.css";
+import "../styles/responsive.css";
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -27,7 +29,7 @@ const latoFont = Lato({
   weight: "100",
 });
 
-const cairoFont = Cairo({
+const cairoFont = Tajawal({
   subsets: ["latin"],
   weight: "200",
 });
@@ -80,12 +82,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={dir}>
       <head> 
-{/*        <script
-              src="https://code.jquery.com/jquery-3.6.0.min.js"
-              integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-              crossOrigin="anonymous"></script>*/}
+        {/*<CustomStyles />*/}
       </head>
-      <body>
+      <body id={locale}>
 
         <div data-scroll-container>
           <NextIntlClientProvider messages={messages}>
