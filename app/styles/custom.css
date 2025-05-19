@@ -46,6 +46,12 @@ body#en .force-trans {
   direction: rtl;
   display: block;
 }
+body#en .fnt-lato {
+  font-family: "Lato" !important;
+}
+body#en .fnt-tajawal {
+  font-family: "Tajawal" !important;
+}
 body#en .bg-white {
   background-color: #fff;
 }
@@ -555,7 +561,6 @@ body#en .col-lang {
 body#en .col-en {
   display: block !important;
 }
-
 /*arabic language*/
 body#ar {
   font-family: "Tajawal";
@@ -599,6 +604,12 @@ body#ar .fnt-trans {
 body#ar .force-trans {
   direction: ltr;
   display: block;
+}
+body#ar .fnt-lato {
+  font-family: "Lato" !important;
+}
+body#ar .fnt-tajawal {
+  font-family: "Tajawal" !important;
 }
 body#ar .bg-white {
   background-color: #fff;

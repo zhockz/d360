@@ -29,25 +29,26 @@ const Navbar = ({ locale }: { locale: string }) => {
               </Link>
             
               <div className="navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                   <li className="nav-item">
                     <Link className="nav-link nav-pad" href={`/${locale}/about`}>{t("about")}</Link>
                   </li>
                   {/*<li className="nav-item">
                     <Link className="nav-link nav-pad" href={`/${locale}/personal`}>{t("personal")}</Link>
                   </li>*/}
-                  <li className="nav-item">
-                    <Link id="lang-switcher" className="nav-link nav-pad-lang" href=""><font className="fnt-trans">{t("language")}</font></Link>
-                  </li>
+{/*                  <li className="nav-item">
+                    <Link id="lang-switcher" className="nav-link nav-pad-lang" href={t("languageLink")}><font className="fnt-trans">{t("language")}</font></Link>
+                  </li>*/}
 
+                  <li className="nav-item">
+                    <select value={locale} onChange={handleLanguageChange} className="form-control lang-switcher">
+                      <option value="en" className="fnt-lato fnt-bold">{t("langDpEN")}</option>
+                      <option value="ar" className="fnt-tajawal fnt-bold">{t("langDpAR")}</option>
+                    </select>
+                  </li>
                 </ul>
 
-                <div className="hideThis">
-                  <select value={locale} onChange={handleLanguageChange} className="form-control">
-                    <option value="en">EN</option>
-                    <option value="ar">AR</option>
-                  </select>
-                </div>
+
 
              </div>
             </div>

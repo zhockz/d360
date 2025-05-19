@@ -7,8 +7,10 @@
     "homeLink": "Home",
     "about": "About 360",
     "aboutLink": "/about",
-    "language": "English",
-    "languageLink": ""
+    "language": "عربي",
+    "languageLink": "/ar",
+    "langDpEN": "English",
+    "langDpAR": "عربي"
   },
   "FooterLinks":{},
   "Buttons":{

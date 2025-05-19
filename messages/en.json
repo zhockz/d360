@@ -8,7 +8,9 @@
     "about": "About 360",
     "aboutLink": "/about",
     "language": "عربي",
-    "languageLink": ""
+    "languageLink": "/ar",
+    "langDpEN": "English",
+    "langDpAR": "عربي"
   },
   "FooterLinks":{},
   "Buttons":{

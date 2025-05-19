@@ -38,6 +38,9 @@ body#en{
 		display:block;
 	}
 
+	.fnt-lato{font-family: "Lato" !important;}
+	.fnt-tajawal{font-family: "Tajawal" !important;}
+
 	.bg-white{background-color: #fff;}
 	.bg-black{background-color: #000;}
 	.bg-orange{background-color: #EB644C;}
@@ -498,6 +501,10 @@ body#en{
 
 	.col-lang{display: none !important;}
 	.col-en{display: block !important;}
+
+	.lang-switcher{}
+	
+
 }
 
 /*arabic language*/
@@ -537,6 +544,8 @@ body#ar{
 		display:block;
 	}
 
+	.fnt-lato{font-family: "Lato" !important;}
+	.fnt-tajawal{font-family: "Tajawal" !important;}
 
 	.bg-white{background-color: #fff;}
 	.bg-black{background-color: #000;}
@@ -1002,5 +1011,8 @@ body#ar{
 
 	.col-lang{display: none !important;}
 	.col-ar{display: block !important;}	
+
+	.lang-switcher{}
+
 
 }
