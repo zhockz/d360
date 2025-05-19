@@ -14,7 +14,8 @@
   "Buttons":{
     "dpApp": "Download the App",
     "createCard": "Create a Card",
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "contactUs": "Contact Us"
   },
   "HomePage": {
     "title": "D360",
@@ -80,6 +81,47 @@
         "par1": "A Saudi digital bank, fully Sharia-compliant and dedicated to delivering the best banking experience for everyone in Saudi Arabia.",
         "par2": "It’s not just about banking services, we’re redefining what banking means. A bank that’s close to you, adapts to your needs, designed for you, and always one step ahead, with products and services that fully comply with Islamic Sharia. We are leading the next era of banking, smarter, faster, and always one step ahead.",
         "par3": "We believe banking should be easy, straightforward, and grounded in trust and transparency."
+      }
+    },
+    "investorSection": {
+      "title": "Our Main Investors"
+    },
+    "leaderSection": {
+      "title": "Meet Our Leaders",
+      "tabs": {
+        "bod": "Board of Directors",
+        "mt": "Management Team",
+        "sh": "Shariah"
+      }
+    },
+    "faqSection":{
+      "title": "FAQs",
+      "faq":{
+        "q1": "Is D360 Bank a licensed bank in Saudi Arabia?",
+        "a1": "D360 Bank is licensed by the council of Ministers Resolution and subject to the supervision of Saudi Central Bank.",
+        "q2": "How do I open an account with D360 Bank?",
+        "a2": "It's simple: Download the app, fill in your details, and complete the registration steps. Your account will be ready in 2 minutes.",
+        "q3": "Is D360 Bank compliant with Islamic Shariah principles?",
+        "a3": "Yes, all products and services of D360 Bank are compliant with Islamic Shariah principles. Therefore, a fully independent Shariah board has been established to oversee all the bank's operations, products, and services.",
+        "q4": "How can I benefit from the bank's services?",
+        "a4": "It's simple: Download the app, fill in your details, and complete the registration steps. Your account will be ready in 2 minutes."        
+      }
+    },
+    "helpSection": {
+      "title": "Helping you wherever you are",
+      "subTitle": "Your opinion matters because you are at the heart of everything we do. Have a question, feedback, or even a complaint? Our team is here for you."
+    },
+    "contactSection": {
+      "title": "How to Reach Us?",
+      "subTitle": "Reach out through the Help section. Send us a message or request a callback, and we'll be there for you.",
+      "contactDet": {
+        "insideKSA": "Inside Saudi Arabia",
+        "insideNumber": "8001244410",
+        "outsideKSA": "Outside Saudi Arabia",
+        "outsideNumber": "00966920024360",
+        "emailLabel": "Email",
+        "emailAdd": "test@d360bank.com",
+        "viaApp": "Via the App"
       }
     }
   },

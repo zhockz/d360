@@ -16,7 +16,7 @@ body#en{
 	a:hover{
 		color: #ff0000;
 	}
-	p{font-size: 16px;}
+	p{font-size: 16px; font-weight: 600;}
 	div{font-size: 16px;}
 	section{font-size: 16px;}
 	ul{font-size: 16px;}
@@ -495,6 +495,9 @@ body#en{
 		opacity:1;
 		transition: all 1000ms ease;
 	}
+
+	.col-lang{display: none !important;}
+	.col-en{display: block !important;}
 }
 
 /*arabic language*/
@@ -511,7 +514,7 @@ body#ar{
 	a:hover{
 		color: #ff0000;
 	}
-	p{font-size: 16px;}
+	p{font-size: 16px; font-weight: 600;}
 	div{font-size: 16px;}
 	section{font-size: 16px;}
 	ul{font-size: 16px;}
@@ -992,4 +995,12 @@ body#ar{
 		opacity:1;
 		transition: all 1000ms ease;
 	}
+
+	.ms-auto,.accordion-button::after {
+     margin-left: 0 !important; 
+	}
+
+	.col-lang{display: none !important;}
+	.col-ar{display: block !important;}	
+
 }

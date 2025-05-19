@@ -19,6 +19,7 @@ body#en a:hover {
 }
 body#en p {
   font-size: 16px;
+  font-weight: 600;
 }
 body#en div {
   font-size: 16px;
@@ -548,6 +549,12 @@ body#en .anim-opacity-show {
   opacity: 1;
   transition: all 1000ms ease;
 }
+body#en .col-lang {
+  display: none !important;
+}
+body#en .col-en {
+  display: block !important;
+}
 
 /*arabic language*/
 body#ar {
@@ -566,6 +573,7 @@ body#ar a:hover {
 }
 body#ar p {
   font-size: 16px;
+  font-weight: 600;
 }
 body#ar div {
   font-size: 16px;
@@ -1094,6 +1102,15 @@ body#ar .anim-opacity-hide {
 body#ar .anim-opacity-show {
   opacity: 1;
   transition: all 1000ms ease;
+}
+body#ar .ms-auto, body#ar .accordion-button::after {
+  margin-left: 0 !important;
+}
+body#ar .col-lang {
+  display: none !important;
+}
+body#ar .col-ar {
+  display: block !important;
 }
 
 /*# sourceMappingURL=custom.css.map */

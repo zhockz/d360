@@ -26,12 +26,12 @@ config.autoAddCss = false;
 
 const latoFont = Lato({
   subsets: ["latin"],
-  weight: "100",
+  weight: "400",
 });
 
 const cairoFont = Tajawal({
   subsets: ["latin"],
-  weight: "200",
+  weight: "400",
 });
 
 

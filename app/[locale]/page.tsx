@@ -44,16 +44,22 @@ export default function Home() {
 
             <div className="row">
               <div className="col-md-6">
-                <h2 className="banner-title">{t("HomePage.bannerSection.title")}</h2>
-                <p className="banner-subtitle">{t("HomePage.bannerSection.subTitle")}</p>
+                <div className="col-lang col-en">
+                  <h2 className="banner-title lato-black">{t("HomePage.bannerSection.title")}</h2>
+                  <p className="banner-subtitle">{t("HomePage.bannerSection.subTitle")}</p>
+                  <div className="spacer-20"></div>
+                  <button className="btn btn-dark btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>                  
+                </div>
               </div>
-              <div className="col-md-6"></div>
+              <div className="col-md-6">
+                <div className="col-lang col-ar">
+                  <h2 className="banner-title">{t("HomePage.bannerSection.title")}</h2>
+                  <p className="banner-subtitle">{t("HomePage.bannerSection.subTitle")}</p>
+                  <div className="spacer-20"></div>
+                  <button className="btn btn-dark btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>                  
+                </div>              
+              </div>
             </div>
-
-            <div className="spacer-20"></div>
-
-            <button className="btn btn-dark btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>
-
           </div>
         </div>
       

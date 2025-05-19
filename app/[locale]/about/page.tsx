@@ -34,14 +34,26 @@ export default function About() {
             <div className="spacer-100"></div>
 
             <div className="row">
+
               <div className="col-md-6">
-                <h2 className="banner-title-page fnt-drk-blue">{t("AboutPage.bannerSection.title")}<br/>{t("AboutPage.bannerSection.subTitle")}</h2>
+                <div className="col-lang col-en">
+                  <h2 className="banner-title-page fnt-drk-blue">{t("AboutPage.bannerSection.title")}<br/>{t("AboutPage.bannerSection.subTitle")}</h2>
+                  <div className="spacer-20"></div>
+                  <button className="btn btn-orange btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>
+                </div>
               </div>
-              <div className="col-md-6"></div>
+
+              <div className="col-md-6">
+                <div className="col-lang col-ar">
+                  <h2 className="banner-title-page fnt-drk-blue">{t("AboutPage.bannerSection.title")}<br/>{t("AboutPage.bannerSection.subTitle")}</h2>
+                  <div className="spacer-20"></div>
+                  <button className="btn btn-orange btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>
+                </div>
+              </div>
+
             </div>
 
-            <div className="spacer-20"></div>
-            <button className="btn btn-orange btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>
+
 
           </div>
           <div className="spacer-100"></div>         
@@ -139,7 +151,7 @@ export default function About() {
                 <div className="col-md-8">
                   
                   <center>
-                    <h2 className="fnt-60 fnt-drk-blue fnt-w700">Our Main Investors</h2> 
+                    <h2 className="fnt-60 fnt-drk-blue fnt-w700">{t("AboutPage.investorSection.title")}</h2> 
                     <div className="spacer-40"></div>
                   </center>
 
@@ -175,20 +187,20 @@ export default function About() {
         <div className="container">
           <div className="spacer-100"></div>
 
-            <h3 className="fnt-40 fnt-drk-blue fnt-w700">Meet Our Leaders</h3>
+            <h3 className="fnt-40 fnt-drk-blue fnt-w700">{t("AboutPage.leaderSection.title")}</h3>
             <div className="spacer-40"></div>
 
             <div className="leaderSectionTabs">
               
               <ul className="nav nav-tabs" id="leaderSectionMenu">
                 <li className="nav-item">
-                  <button className="nav-link active" data-bs-toggle="tab" data-bs-target="#bod">Board of Directors</button>
+                  <button className="nav-link active" data-bs-toggle="tab" data-bs-target="#bod">{t("AboutPage.leaderSection.tabs.bod")}</button>
                 </li>
                 <li className="nav-item">
-                  <button className="nav-link" data-bs-toggle="tab" data-bs-target="#mt">Management Team</button>
+                  <button className="nav-link" data-bs-toggle="tab" data-bs-target="#mt">{t("AboutPage.leaderSection.tabs.mt")}</button>
                 </li>
                 <li className="nav-item">
-                  <button className="nav-link" data-bs-toggle="tab" data-bs-target="#sh">Shariah</button>
+                  <button className="nav-link" data-bs-toggle="tab" data-bs-target="#sh">{t("AboutPage.leaderSection.tabs.sh")}</button>
                 </li>
               </ul>
 
@@ -359,7 +371,7 @@ export default function About() {
         <div className="container">
           <div className="spacer-100"></div>
 
-          <h2 className="fnt-60 fnt-drk-blue fnt-w700">FAQs</h2> 
+          <h2 className="fnt-60 fnt-drk-blue fnt-w700">{t("AboutPage.faqSection.title")}</h2> 
           <div className="spacer-20"></div>
 
           <div className="accordion" id="faqAccordion">
@@ -367,12 +379,12 @@ export default function About() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingOne">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                  Is D360 Bank a licensed bank in Saudi Arabia?
+                  {t("AboutPage.faqSection.faq.q1")}
                 </button>
               </h2>
               <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <p className="fnt-20">D360 Bank is licensed by the council of Ministers Resolution and subject to the supervision of Saudi Central Bank</p>
+                  <p className="fnt-20">{t("AboutPage.faqSection.faq.a1")}</p>
                 </div>
               </div>
             </div>
@@ -380,12 +392,12 @@ export default function About() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingTwo">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >
-                  How do I open an account with D360 Bank?
+                  {t("AboutPage.faqSection.faq.q2")}
                 </button>
               </h2>
               <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <p className="fnt-20">It's simple: Download the app, fill in your details, and complete the registration steps. Your account will be ready in 2 minutes.</p>
+                  <p className="fnt-20">{t("AboutPage.faqSection.faq.a2")}</p>
                 </div>
               </div>
             </div>
@@ -393,12 +405,12 @@ export default function About() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingThree">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" >
-                  Is D360 Bank compliant with Islamic Shariah principles?
+                  {t("AboutPage.faqSection.faq.q3")}
                 </button>
               </h2>
               <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <p className="fnt-20">Yes, all products and services of D360 Bank are compliant with Islamic Shariah principles. Therefore, a fully independent Shariah board has been established to oversee all the bank's operations, products, and services.</p>
+                  <p className="fnt-20">{t("AboutPage.faqSection.faq.a3")}</p>
                 </div>
               </div>
             </div>
@@ -406,12 +418,12 @@ export default function About() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingFour">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" >
-                  How can I benefit from the bank's services?
+                  {t("AboutPage.faqSection.faq.q4")}
                 </button>
               </h2>
               <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  <p className="fnt-20">It's simple: Download the app, fill in your details, and complete the registration steps. Your account will be ready in 2 minutes.</p>
+                  <p className="fnt-20">{t("AboutPage.faqSection.faq.a4")}</p>
                 </div>
               </div>
             </div>
@@ -430,14 +442,14 @@ export default function About() {
           <div className="spacer-80"></div>
 
           <center>
-            <h2 className="fnt-60 fnt-drk-blue fnt-w700">Helping you wherever you are</h2>
+            <h2 className="fnt-60 fnt-drk-blue fnt-w700">{t("AboutPage.helpSection.title")}</h2>
             <div className="row">
               <div className="col-md-2"></div>
               <div className="col-md-8">
-                <p className="fnt-20 fnt-drk-blue">Your opinion matters because you are at the heart of everything we do. Have a question, feedback, or even a complaint? Our team is here for you</p>
+                <p className="fnt-20 fnt-drk-blue">{t("AboutPage.helpSection.subTitle")}</p>
 
                   <div className="spacer-20"></div>
-                  <Link href="" className="btn btn-orange btn-lg btn-dl">Contact US</Link>                 
+                  <Link href="" className="btn btn-orange btn-lg btn-dl">{t("Buttons.contactUs")}</Link>                 
               </div>
               <div className="col-md-2"></div>
             </div>
@@ -465,35 +477,35 @@ export default function About() {
 
             <div className="col-md-7">
 
-              <h4 className="fnt-40 fnt-drk-blue fnt-w700">How to Reach Us?</h4>
+              <h4 className="fnt-40 fnt-drk-blue fnt-w700">{t("AboutPage.contactSection.title")}</h4>
 
               <div className="row">
 
                 <div className="col-md-4">
-                  <p className="fnt-20 fnt-light-gray">Inside Saudi Arabia</p>
-                  <p className="fnt-20 fnt-drk-blue">8001244410</p>
+                  <p className="fnt-20 fnt-light-gray">{t("AboutPage.contactSection.contactDet.insideKSA")}</p>
+                  <p className="fnt-20 fnt-drk-blue">{t("AboutPage.contactSection.contactDet.insideNumber")}</p>
                 </div>
 
                 <div className="col-md-4">
-                  <p className="fnt-20 fnt-light-gray">Outside Saudi Arabia</p>
-                  <p className="fnt-20 fnt-drk-blue">00966920024360</p>
+                  <p className="fnt-20 fnt-light-gray">{t("AboutPage.contactSection.contactDet.outsideKSA")}</p>
+                  <p className="fnt-20 fnt-drk-blue">{t("AboutPage.contactSection.contactDet.outsideNumber")}</p>
                 </div>
 
                 <div className="col-md-4">
-                  <p className="fnt-20 fnt-light-gray">Email</p>
-                  <p className="fnt-20 fnt-drk-blue">test@d360bank.com</p>
+                  <p className="fnt-20 fnt-light-gray">{t("AboutPage.contactSection.contactDet.emailLabel")}</p>
+                  <p className="fnt-20 fnt-drk-blue">{t("AboutPage.contactSection.contactDet.emailAdd")}</p>
                 </div>
 
               </div>
 
               <div className="spacer-40"></div>
 
-              <h4 className="fnt-30 fnt-drk-blue fnt-w700">Via the App</h4>
+              <h4 className="fnt-30 fnt-drk-blue fnt-w700">{t("AboutPage.contactSection.contactDet.viaApp")}</h4>
 
-              <p className="fnt-20 fnt-drk-blue">Reach out through the Help section. Send us a message or request a callback, and we'll be there for you.</p>
+              <p className="fnt-20 fnt-drk-blue">{t("AboutPage.contactSection.subTitle")}</p>
 
               <div className="spacer-20"></div>
-              <Link href="" className="btn btn-orange btn-lg btn-dl">Download app</Link>              
+              <Link href="" className="btn btn-orange btn-lg btn-dl">{t("Buttons.dpApp")}</Link>              
 
             </div>
           </div>
