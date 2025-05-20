@@ -207,9 +207,32 @@ export default function About() {
               <div className="row">
 
                 <div id="leaderContent" className="col-md-12">
+
+                  <div className="spacer-40"></div>
+
+                  <div id="id1" className="contentBox">
+                    <div className="row">
+                      <div className="col-10">
+                        <p className="member-name">Taha Al-Quweiz</p>
+                        <p className="member-position">Chairman</p>
+                        <div className="spacer20"></div>
+                      </div>
+                      <div className="col-2"></div>
+                    </div>
+
+                    <p className="content">In addition to being the Chairman of the Board at D360 Bank, Mr. AlKuwaiz is currently the Chairman of the Board of Derayah Financial Company, where he played a pivotal role in establishing the company. He has held various senior positions including Chairman of Bank AlJazira, Chairman of the Saudi Stock Exchange (Tadawul) and Vice Chairman of STC. He was also the Deputy CEO of NCB, and a former Director of Banking Technology at SAMA. Mr. AlKuwaiz holds a bachelor’s degree in computer science from King Fahd University of Petroleum & Minerals. He has extensive work experience in the financial services sector.</p>
+                      <div className="spacer-40"></div>
+
+
+
+                  </div>
+
+
                 </div>
 
                 <div id="leaderLists" className="col-md-12">
+
+
                   <div className="tab-content">
 
                     <div className="tab-pane fade show active" id="bod">
@@ -218,8 +241,8 @@ export default function About() {
                         <div className="teamList">
                           <div className="row">
 
-                            <div className="col-md-3">
-                              <div className="teamDetails posRel">
+                            <div className="col-list col-md-3">
+                              <div className="teamDetails posRel" data-team="#id1" >
                                 <div className="teamImg">
                                   <Image src={'/about/team/taha.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
                                 </div>
@@ -231,7 +254,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3" data-team="#id2">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/zaki.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -244,7 +267,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/ibrahim.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -257,7 +280,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/bassem.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -270,7 +293,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/fahad.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -283,7 +306,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>    
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/nouf.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -296,7 +319,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>  
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/tim.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -309,7 +332,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div> 
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/mudassir.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
@@ -322,7 +345,7 @@ export default function About() {
                               <div className="spacer-40"></div>
                             </div>  
 
-                            <div className="col-md-3">
+                            <div className="col-list col-md-3">
                               <div className="teamDetails posRel">
                                 <div className="teamImg">
                                   <Image src={'/about/team/faraz.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>

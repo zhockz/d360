@@ -222,7 +222,7 @@ export default function Home() {
       
       </section>  
 
-      <section id="transferSection" className="" data-scroll-section>     
+{/*      <section id="transferSection" className="" data-scroll-section>     
         <div className="container">
           <div className="spacer-100"></div>    
 
@@ -250,7 +250,7 @@ export default function Home() {
           <div className="spacer-100"></div>           
         </div>            
       
-      </section>            
+      </section>  */}          
 
 
 

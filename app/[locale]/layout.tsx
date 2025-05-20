@@ -19,6 +19,9 @@ import "../styles/globals.css";
 import "../styles/custom.css";
 import "../styles/navigation.css";
 import "../styles/responsive.css";
+import "../styles/custom-rtl.css";
+import "../styles/navigation-rtl.css";
+import "../styles/responsive-rtl.css";
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';

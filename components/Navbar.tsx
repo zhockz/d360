@@ -5,18 +5,25 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React, { ChangeEvent } from "react";
+import { useTransition } from 'react';
 
 
 const Navbar = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
   const pathname = usePathname();
   const router = useRouter();
+  const [isPending, startTransition] = useTransition();
 
-  const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value as string;
-    const path = pathname.split("/").slice(2).join("/");
-    router.push(`/${newLocale}/${path}`);
-  };
+  const changeLanguage = (locale: string) => {
+    const segments = pathname.split('/');
+    segments[1] = locale; // Change the locale segment
+    const newPath = segments.join('/');
+
+    startTransition(() => {
+      router.replace(newPath); // Navigates without a full reload
+    });
+  }; 
+
   return (
       <div id="main-navigation" className="desktop-view">
         <nav className="navbar navbar-expand-lg fixed-top navbar-transparent">
@@ -24,8 +31,8 @@ const Navbar = ({ locale }: { locale: string }) => {
 
             <div className="container d-flex align-items-center">
               <Link className="navbar-brand" href={`/${locale}/`}>
-                <Image src={'/logo/logo-main.svg'} alt="" className="img-fluid nav-logo logo-main logo-show" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
-                <Image src={'/logo/logo-white.svg'} alt="" className="img-fluid nav-logo logo-white logo-hide" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                <Image src={'/logo/logo-main-white.svg'} alt="" className="img-fluid nav-logo logo-main logo-show" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                <Image src={'/logo/logo-main-colored.svg'} alt="" className="img-fluid nav-logo logo-white logo-hide" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
               </Link>
             
               <div className="navbar-collapse" id="navbarNav">
@@ -36,15 +43,20 @@ const Navbar = ({ locale }: { locale: string }) => {
                   {/*<li className="nav-item">
                     <Link className="nav-link nav-pad" href={`/${locale}/personal`}>{t("personal")}</Link>
                   </li>*/}
-{/*                  <li className="nav-item">
-                    <Link id="lang-switcher" className="nav-link nav-pad-lang" href={t("languageLink")}><font className="fnt-trans">{t("language")}</font></Link>
-                  </li>*/}
-
                   <li className="nav-item">
-                    <select value={locale} onChange={handleLanguageChange} className="form-control lang-switcher">
-                      <option value="en" className="fnt-lato fnt-bold">{t("langDpEN")}</option>
-                      <option value="ar" className="fnt-tajawal fnt-bold">{t("langDpAR")}</option>
-                    </select>
+                    <button id="lang-switcher-en" className="nav-link nav-pad-lang" onClick={() => changeLanguage("ar")}>
+                      <font className="fnt-trans">
+                      {t("langDpAR")}
+                      </font>
+                    </button>
+                  </li>
+
+                 <li className="nav-item">
+                    <button id="lang-switcher-ar" className="nav-link nav-pad-lang" onClick={() => changeLanguage("en")}>
+                      <font className="fnt-trans">
+                      {t("langDpEN")}
+                      </font>
+                    </button>
                   </li>
                 </ul>
 

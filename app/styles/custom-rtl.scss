@@ -1,11 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
+/*arabic language*/
+body#ar{
 
-/*english language*/
-body#en{
-
-	font-family: "Lato";
+	font-family: "Tajawal";
 	
 	a{
 		color: #656565;
@@ -29,12 +25,13 @@ body#en{
 	}
 
 	.fnt-trans{
-		font-family: "Tajawal" !important;
+		font-family: "Lato" !important;
 	/*	direction:rtl;
 		display:block;*/
 	}
+
 	.force-trans{
-		direction:rtl;
+		direction:ltr;
 		display:block;
 	}
 
@@ -105,10 +102,10 @@ body#en{
 	.allCaps{text-transform: uppercase;}
 
 
-	.fa-mar-right{margin-right: 5px;}
-	.fa-mar-left{margin-left: 5px;}
-	.fa-mar-right-20{margin-right: 20px;}
-	.fa-mar-left-20{margin-left: 20px;}
+	.fa-mar-right{margin-left: 5px;}
+	.fa-mar-left{margin-right: 5px;}
+	.fa-mar-right-20{margin-left: 20px;}
+	.fa-mar-left-20{margin-right: 20px;}
 
 	.hideThis{display: none !important;}
 
@@ -184,7 +181,7 @@ body#en{
 
 
 	.logo-colored-footer{
-	    max-width: 7rem;
+	    max-width:7rem;
 	}
 	.ft-title{
 		// color: #C0C6D0;
@@ -198,13 +195,13 @@ body#en{
 	footer p{
 		text-decoration:none;
 		color: #bebebe;
-		font-size:16px;
+		font-size:18px;
 	}
 
 	.socialMedia a{
 		text-decoration:none;
 		color: #293242;
-	    padding-left: 20px;
+	    padding-right: 20px;
 	}
 
 	.socialMedia a .svg-inline--fa{height: 25px;}
@@ -296,7 +293,7 @@ body#en{
 	    border: 1px solid #ffff !important;
 	    border-radius: 15px !important;
 	    min-width: 60%;
-	    text-align: left !important;
+	    text-align: right !important;
 	    font-size: 20px !important;
 	    padding: 10px 35px !important;
 	    transition: all 300ms ease;
@@ -340,8 +337,8 @@ body#en{
 	.ct-card img{
 		position: absolute;
 		z-index:6;
-		left:0;
 		right:0;
+		left:0;
 		bottom:10rem;
 		opacity:1;
 		margin:auto;
@@ -351,7 +348,7 @@ body#en{
 	.ct-bg-left{
 		position:absolute;
 		top:0;
-		left: -50%;
+		right: -50%;
 	    width: 100% !important;
 	    z-index:5;
 	    opacity:1;
@@ -361,8 +358,8 @@ body#en{
 	.ct-phone img{
 		position: absolute;
 		z-index:4;
-		left:0;
 		right:0;
+		left:0;
 		bottom:0;
 		opacity:1;
 		margin:auto;
@@ -372,8 +369,8 @@ body#en{
 	.ct-caption-physical{
 		position: absolute;
 		z-index:6;
-		left:0;
 		right:0;
+		left:0;
 		bottom:1rem;
 		opacity:0;
 		margin:auto;
@@ -384,8 +381,8 @@ body#en{
 	.ct-caption-digital{
 		position: absolute;
 		z-index:6;
-		left:0;
 		right:0;
+		left:0;
 		bottom:1rem;
 		opacity:0;
 		margin:auto;
@@ -401,7 +398,7 @@ body#en{
 	.ct-bg-right{
 		position:absolute;
 		top:0;
-		right: -50%;
+		left: -50%;
 	    width: 100% !important;
 	    z-index:3;
 	    opacity:1;
@@ -409,12 +406,12 @@ body#en{
 	}
 
 	.ct-bg-left.slide-right{
-		left: 0;
+		right: 0;
 		z-index:5;
 		transition:all 800ms ease;
 	}
 	.ct-bg-right.slide-left{
-		right: 0;
+		left: 0;
 		z-index:3;
 		transition:all 800ms ease;
 	}
@@ -440,8 +437,8 @@ body#en{
 		border-radius: 15px;
 		border: none;
 		box-shadow: none;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;;
 	}
 
 	#faqAccordion .accordion-item{
@@ -455,8 +452,8 @@ body#en{
 	#faqAccordion .accordion-body {	
 		background-color: #F8F8F8;
 		background-color: #F8F8F8;
-		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
 	}
 
 	.borded-img{border-radius:15px;}
@@ -485,8 +482,8 @@ body#en{
 		background-color: #fff;
 		width: 87%;
 		padding: 5px 15px;
-		left: 0;
 		right: 0;
+		left: 0;
 		margin: auto;
 		border-radius: 15px;
 	}
@@ -501,39 +498,16 @@ body#en{
 		transition: all 1000ms ease;
 	}
 
+	.ms-auto,.accordion-button::after {
+     margin-left: 0 !important; 
+	}
+
 	.col-lang{display: none !important;}
-	.col-en{display: block !important;}
+	.col-ar{display: block !important;}	
 
 	.lang-switcher{}
-	
-	#lang-switcher-en{display: block;}	
-	#lang-switcher-ar{display: none;}	
 
-	.col-md-12, 
-	.col-md-7,
-	.col-md-5,
-	.col-md-8,
-	.col-md-4{
-		transition: all 300ms ease;
-	} 
+	#lang-switcher-en{display: none;}	
+	#lang-switcher-ar{display: block;}	
 
-	.teamDetails.active img{
-		filter: grayscale(0) !important;
-		transition: all 300ms ease;
-	}
-	.teamDetails.non-active img{
-		filter: grayscale(100%);
-		transition: all 300ms ease;
-	}
-	.contentBox{
-		background-color: #F8F8F8;
-		padding: 2rem;
-		border-radius: 17px;
-
-	}
-
-	.member-name{}
-	.member-postion{}
-}
-
- 
+} 

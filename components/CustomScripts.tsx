@@ -41,6 +41,26 @@ const CustomScripts = ({ locale }: { locale: string }) => {
             $(".ct-card").removeClass("fade-card");
             $(".ct-caption-digital").removeClass("ct-caption-show");            
           });
+
+          $(".teamDetails").each(function(){
+            $(this).on("click touch", function(){
+
+                var getData = $(this).attr("data-team");
+                console.log(getData);
+                
+                $(".teamDetails").removeClass("active");
+                $(".teamDetails").addClass("non-active");
+                $(this).addClass("active");
+                $(this).addClass("non-active");
+                $(".teamList .col-list").removeClass("col-md-3");
+                $(".teamList .col-list").addClass("col-md-4");
+                $("#leaderLists").removeClass("col-md-12");
+                $("#leaderLists").addClass("col-md-8");
+                $("#leaderContent").removeClass("col-md-12");
+                $("#leaderContent").addClass("col-md-4");                
+
+            });
+          });
         });
 
 
