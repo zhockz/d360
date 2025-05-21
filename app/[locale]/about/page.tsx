@@ -211,20 +211,40 @@ export default function About() {
                   <div className="spacer-40"></div>
 
                   <div id="id1" className="contentBox">
-                    <div className="row">
+                    <div className="row d-flex align-items-start">
                       <div className="col-10">
-                        <p className="member-name">Taha Al-Quweiz</p>
-                        <p className="member-position">Chairman</p>
+                        <p className="member-name remMar">Taha Al-Quweiz</p>
+                        <p className="member-position remMar">Chairman</p>
                         <div className="spacer20"></div>
                       </div>
-                      <div className="col-2"></div>
+                      <div className="col-2 d-flex justify-content-end">
+                         <Image src={'/icons/ex.png'} alt="" className="img-fluid closeDetails" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                      </div>
                     </div>
+
+                    <div className="spacer-20"></div>
 
                     <p className="content">In addition to being the Chairman of the Board at D360 Bank, Mr. AlKuwaiz is currently the Chairman of the Board of Derayah Financial Company, where he played a pivotal role in establishing the company. He has held various senior positions including Chairman of Bank AlJazira, Chairman of the Saudi Stock Exchange (Tadawul) and Vice Chairman of STC. He was also the Deputy CEO of NCB, and a former Director of Banking Technology at SAMA. Mr. AlKuwaiz holds a bachelor’s degree in computer science from King Fahd University of Petroleum & Minerals. He has extensive work experience in the financial services sector.</p>
                       <div className="spacer-40"></div>
+                  </div>
 
 
+                  <div id="id2" className="contentBox">
+                    <div className="row d-flex align-items-start">
+                      <div className="col-10">
+                        <p className="member-name remMar">Zaki Alshowaier</p>
+                        <p className="member-position remMar">Vice Chairman</p>
+                        <div className="spacer20"></div>
+                      </div>
+                      <div className="col-2 d-flex justify-content-end">
+                         <Image src={'/icons/ex.png'} alt="" className="img-fluid closeDetails" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
+                      </div>
+                    </div>
 
+                    <div className="spacer-20"></div>
+
+                    <p className="content">In addition to being the Chairman of the Board at D360 Bank, Mr. AlKuwaiz is currently the Chairman of the Board of Derayah Financial Company, where he played a pivotal role in establishing the company. He has held various senior positions including Chairman of Bank AlJazira, Chairman of the Saudi Stock Exchange (Tadawul) and Vice Chairman of STC. He was also the Deputy CEO of NCB, and a former Director of Banking Technology at SAMA. Mr. AlKuwaiz holds a bachelor’s degree in computer science from King Fahd University of Petroleum & Minerals. He has extensive work experience in the financial services sector.</p>
+                      <div className="spacer-40"></div>
                   </div>
 
 
@@ -248,20 +268,20 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Taha Al-Quweiz</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Chairman</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Chairman</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
                             </div>
 
-                            <div className="col-list col-md-3" data-team="#id2">
-                              <div className="teamDetails posRel">
+                            <div className="col-list col-md-3">
+                              <div className="teamDetails posRel" data-team="#id2">
                                 <div className="teamImg">
                                   <Image src={'/about/team/zaki.png'} alt="" className="img-fluid" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}/>
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Zaki Alshowaier</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Vice Chairman</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Vice Chairman</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -274,7 +294,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Ibrahim Al Jammaz</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -287,7 +307,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Bassem Al Sallom</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -300,7 +320,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Fahad AlJomaih</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -313,7 +333,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Nouf AlJoaid</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -326,7 +346,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Tim Brooke</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -339,7 +359,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Mudassir Sheikha</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>
@@ -352,7 +372,7 @@ export default function About() {
                                 </div>
                                 <div className="teamCaption">
                                   <p className="fnt-20 fnt-bold remMar">Faraz Khalid</p>
-                                  <p className="fnt-20 fnt-w100 remMar">Board Member</p>
+                                  <p className="fnt-18 fnt-w100 remMar">Board Member</p>
                                 </div>                              
                               </div>
                               <div className="spacer-40"></div>

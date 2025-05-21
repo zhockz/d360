@@ -165,6 +165,9 @@ body#ar .fnt-extraBold {
 body#ar .fnt-bold {
   font-weight: bold;
 }
+body#ar .fnt-w100 {
+  font-weight: 100;
+}
 body#ar .fnt-w300 {
   font-weight: 300;
 }
@@ -533,7 +536,7 @@ body#ar .teamCaption {
   bottom: 0.5rem;
   background-color: #fff;
   width: 87%;
-  padding: 5px 15px;
+  padding: 15px;
   right: 0;
   left: 0;
   margin: auto;
@@ -561,6 +564,45 @@ body#ar #lang-switcher-en {
 }
 body#ar #lang-switcher-ar {
   display: block;
+}
+body#ar .teamDetails img:hover,
+body#ar .teamDetails.active img {
+  filter: grayscale(0) !important;
+  transition: all 300ms ease;
+}
+body#ar .teamDetails.non-active img {
+  filter: grayscale(100%);
+  transition: all 300ms ease;
+}
+body#ar .contentBox {
+  background-color: #F8F8F8;
+  padding: 2rem;
+  border-radius: 17px;
+  display: none;
+}
+body#ar .contentBox.active {
+  background-color: #F8F8F8;
+  padding: 2rem;
+  border-radius: 17px;
+  display: block;
+}
+body#ar #leaderContent {
+  position: absolute;
+  opacity: 0;
+}
+body#ar #leaderContent.showContent {
+  position: unset;
+  opacity: 1;
+}
+body#ar .member-position {
+  font-weight: 100;
+  font-size: 15px;
+}
+body#ar .closeDetails {
+  cursor: pointer;
+}
+body#ar .teamCaption p {
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=custom-rtl.css.map */

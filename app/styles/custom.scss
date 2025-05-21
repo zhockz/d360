@@ -93,6 +93,7 @@ body#en{
 	.fnt-allCaps{text-transform: uppercase;}
 	.fnt-extraBold{font-weight: bolder;}
 	.fnt-bold{font-weight: bold;}
+	.fnt-w100{font-weight: 100;}		
 	.fnt-w300{font-weight: 300;}
 	.fnt-w500{font-weight:500;}
 	.fnt-w600{font-weight:600;}
@@ -484,7 +485,7 @@ body#en{
 		bottom: 0.5rem;
 		background-color: #fff;
 		width: 87%;
-		padding: 5px 15px;
+		padding: 15px;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -514,9 +515,10 @@ body#en{
 	.col-md-5,
 	.col-md-8,
 	.col-md-4{
-		transition: all 300ms ease;
+		// transition: all 300ms ease;
 	} 
 
+	.teamDetails img:hover,
 	.teamDetails.active img{
 		filter: grayscale(0) !important;
 		transition: all 300ms ease;
@@ -529,11 +531,35 @@ body#en{
 		background-color: #F8F8F8;
 		padding: 2rem;
 		border-radius: 17px;
+		display: none;
+	}
 
+	.contentBox.active{
+		background-color: #F8F8F8;
+		padding: 2rem;
+		border-radius: 17px;
+		display: block;
+	}
+
+	#leaderContent{
+		position: absolute;
+		opacity: 0;
+		// transition: all 300ms ease;
+	}
+
+	#leaderContent.showContent{
+		position: unset;
+		opacity: 1;
+		// transition: all 300ms ease;
 	}
 
 	.member-name{}
-	.member-postion{}
+	.member-position{
+	font-weight: 100;
+	  font-size: 15px;
+	}
+	.closeDetails{cursor: pointer;}
+	.teamCaption p{line-height: 1.2;}
 }
 
  

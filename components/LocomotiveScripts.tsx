@@ -49,6 +49,32 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
                 }     
         }); 
 
+        const snapSection = document.querySelector('.snap-target');
+        let hasSnapped = false;
+
+        scroll.on('scroll', (args) => {
+          const scrollY = args.scroll.y;
+          const sectionTop = snapSection.offsetTop;
+          const sectionHeight = snapSection.offsetHeight;
+
+          // Trigger when user is within 25% of section center
+          const distanceToSection = Math.abs(scrollY - sectionTop);
+
+          if (!hasSnapped && distanceToSection < sectionHeight / 4) {
+            hasSnapped = true;
+            scroll.scrollTo(snapSection, {
+              offset: 0,
+              duration: 500,
+              disableLerp: true
+            });
+          }
+
+          // Reset flag when user scrolls away
+          if (hasSnapped && distanceToSection > sectionHeight / 2) {
+            hasSnapped = false;
+          }
+        });
+
         new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"));
         return () => scroll.destroy();         
 
