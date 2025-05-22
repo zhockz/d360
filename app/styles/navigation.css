@@ -5,9 +5,12 @@ body#en #main-navigation .navbar-transparent {
   transition: all 300ms ease;
 }
 body#en #main-navigation .navbar-dark {
+  background-color: #fff !important;
   background-color: transparent !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
   transition: all 300ms ease;
 }
 body#en #main-navigation .navbar-transparent .nav-link {

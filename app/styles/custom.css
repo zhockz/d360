@@ -605,5 +605,52 @@ body#en .closeDetails {
 body#en .teamCaption p {
   line-height: 1.2;
 }
+body#en #cardSectionImg {
+  position: absolute;
+  top: -57rem;
+  z-index: 1;
+  right: 15rem;
+  height: auto;
+}
+body#en .reveal-top {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+body#en .reveal-bottom {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+body#en .in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+body#en .reveal-img {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+body#en .show-img {
+  opacity: 1 !important;
+  transform: translateY(0) 1 !important;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+body#en .rotate-img1 {
+  transform: rotate(-30deg);
+  transition: all 1000ms ease;
+}
+body#en .rotate-img2 {
+  transform: rotate(30deg);
+  transition: all 1000ms ease;
+}
+body#en .rotate-img3 {
+  transform: rotate(-15deg);
+  transition: all 1000ms ease;
+}
+body#en .rotate-img4 {
+  transform: rotate(15deg);
+  transition: all 1000ms ease;
+}
 
 /*# sourceMappingURL=custom.css.map */

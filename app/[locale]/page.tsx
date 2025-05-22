@@ -26,7 +26,7 @@ export default function Home() {
 
     <div className="main-content">
 
-      <section id="bannerSection" className="" data-scroll-section>
+      <section id="bannerSection" className="snap-target" data-scroll-section>
 
         <div className="banner-media">
           <div className="container-fluid remPad">
@@ -141,73 +141,97 @@ export default function Home() {
 
       </section>*/}
 
-      <section id="cardSection1" className="bg-beige snap-target" data-scroll-section>
-        <div className="container">
+      <div id="cardsection" className="posRel">
 
-          <div className="row vh-100 d-flex align-items-center">
-            <div className="col-md-6">
-              <div className="card-caption capAnim-show capAnim-1">
-                <h2 className="card-title">{t("HomePage.cardSection.title1")}</h2>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle1")}</p>            
+        <div id="cardSectionImg" className="reveal-img">
+          <Image src={'/card/card.png'} alt="" className="img-fluid" width={600} height={600}/>
+        </div>
+
+        <section id="cardSection1" className="bg-beige vh-100 snap-target" data-scroll-section>
+          <div className="container">
+
+            <div className="row vh-100 d-flex align-items-center">
+              <div className="col-md-6">
+                <div className="card-caption capAnim-show capAnim-1">
+                  <h2 className="card-title reveal-top" data-scroll-class="in-view" data-scroll data-scroll-repeat data-scroll-call="cardSection1">
+                    {t("HomePage.cardSection.title1")}
+                  </h2>
+                  <p className="card-subtitle reveal-bottom" data-scroll-class="in-view" data-scroll data-scroll-repeat>
+                    {t("HomePage.cardSection.subTitle1")}
+                  </p>            
+                </div>
               </div>
+              <div className="col-md-6"></div>
             </div>
-            <div className="col-md-6"></div>
-          </div>
-         
-        </div>
-
-      </section>
-
-      <section id="cardSection2" className="bg-beige snap-target" data-scroll-section>
-        <div className="container">
-        
-          <div className="row vh-100 d-flex align-items-center">
-            <div className="col-md-6">
-              <div className="card-caption  capAnim-show capAnim-2">
-                <h2 className="card-title">{t("HomePage.cardSection.title2")}</h2>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle2")}</p>            
-              </div> 
-            </div>
-            <div className="col-md-6"></div>
-          </div>
-        </div>
-
-      </section>
-
-      <section id="cardSection3" className="bg-beige snap-target" data-scroll-section>
-        <div className="container">
-
-          <div className="row vh-100 d-flex align-items-center">
-            <div className="col-md-6"> 
-              <div className="card-caption  capAnim-show capAnim-3">
-                <h2 className="card-title">{t("HomePage.cardSection.title3")}</h2>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle3")}</p>            
-              </div> 
-            </div>
-            <div className="col-md-6"></div>
+           
           </div>
 
-         
-        </div>
+        </section>
 
-      </section>
-
-      <section id="cardSection4" className="bg-beige snap-target" data-scroll-section>
-        <div className="container">
-        
-
-          <div className="row vh-100 d-flex align-items-center">
-            <div className="col-md-6"> 
-              <div className="card-caption  capAnim-show capAnim-4">
-                <h2 className="card-title">{t("HomePage.cardSection.title4")}</h2>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle4")}</p>            
-              </div>                 
+        <section id="cardSection2" className="bg-beige vh-100 snap-target" data-scroll-section>
+          <div className="container">
+          
+            <div className="row vh-100 d-flex align-items-center">
+              <div className="col-md-6">
+                <div className="card-caption  capAnim-show capAnim-2">
+                  <h2 className="card-title reveal-top" data-scroll-class="in-view" data-scroll data-scroll-repeat data-scroll-call="cardSection2">
+                    {t("HomePage.cardSection.title2")}
+                  </h2>
+                  <p className="card-subtitle reveal-bottom" data-scroll-class="in-view" data-scroll data-scroll-repeat>
+                    {t("HomePage.cardSection.subTitle2")}
+                  </p>            
+                </div> 
+              </div>
+              <div className="col-md-6"></div>
             </div>
-            <div className="col-md-6"></div>
-          </div>           
-        </div>
+          </div>
 
-      </section>
+        </section>
+
+        <section id="cardSection3" className="bg-beige vh-100 snap-target" data-scroll-section>
+          <div className="container">
+
+            <div className="row vh-100 d-flex align-items-center">
+              <div className="col-md-6"> 
+                <div className="card-caption  capAnim-show capAnim-3">
+                  <h2 className="card-title reveal-top" data-scroll-class="in-view" data-scroll data-scroll-repeat data-scroll-call="cardSection3">
+                    {t("HomePage.cardSection.title3")}
+                  </h2>
+                  <p className="card-subtitle reveal-bottom" data-scroll-class="in-view" data-scroll data-scroll-repeat>
+                    {t("HomePage.cardSection.subTitle3")}
+                  </p>            
+                </div> 
+              </div>
+              <div className="col-md-6"></div>
+            </div>
+
+           
+          </div>
+
+        </section>
+
+        <section id="cardSection4" className="bg-beige vh-100 snap-target" data-scroll-section >
+          <div className="container">
+          
+
+            <div className="row vh-100 d-flex align-items-center">
+              <div className="col-md-6"> 
+                <div className="card-caption  capAnim-show capAnim-4">
+                  <h2 className="card-title reveal-top" data-scroll-class="in-view" data-scroll data-scroll-repeat data-scroll-call="cardSection4">
+                    {t("HomePage.cardSection.title4")}
+                  </h2>
+                  <p className="card-subtitle reveal-bottom" data-scroll-class="in-view" data-scroll data-scroll-repeat>
+                    {t("HomePage.cardSection.subTitle4")}
+                  </p>            
+                </div>                 
+              </div>
+              <div className="col-md-6"></div>
+            </div>           
+          </div>
+
+        </section>
+
+      </div>
 
       <section id="infoSection" data-scroll-section>
         <div className="container" data-scroll-sticky>

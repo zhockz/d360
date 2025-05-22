@@ -49,29 +49,92 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
                 }     
         }); 
 
-        const snapSection = document.querySelector('.snap-target');
-        let hasSnapped = false;
 
-        scroll.on('scroll', (args) => {
-          const scrollY = args.scroll.y;
-          const sectionTop = snapSection.offsetTop;
-          const sectionHeight = snapSection.offsetHeight;
+        let currentIndex = 0;
+        let isScrolling = false;
+        const sections = document.querySelectorAll('.snap-target');
 
-          // Trigger when user is within 25% of section center
-          const distanceToSection = Math.abs(scrollY - sectionTop);
+        function scrollToSection(index) {
+          if (index < 0 || index >= sections.length) return;
+          isScrolling = true;
 
-          if (!hasSnapped && distanceToSection < sectionHeight / 4) {
-            hasSnapped = true;
-            scroll.scrollTo(snapSection, {
-              offset: 0,
-              duration: 500,
-              disableLerp: true
-            });
+          scroll.scrollTo(sections[index], {
+            offset: 0,
+            duration: 800,
+          });
+
+          currentIndex = index;
+          setTimeout(() => {
+            isScrolling = false;
+          }, 500);
+
+
+        }
+
+        function handleWheel(e) {
+          if (isScrolling) return;
+
+          if (e.deltaY > 50) {
+            scrollToSection(currentIndex + 1);
+  
+
+          } else if (e.deltaY < -50) {
+            scrollToSection(currentIndex - 1);
+           
           }
+        }
 
-          // Reset flag when user scrolls away
-          if (hasSnapped && distanceToSection > sectionHeight / 2) {
-            hasSnapped = false;
+        // Prevent native scroll behavior
+        window.addEventListener('wheel', (e) => {
+          e.preventDefault();
+          handleWheel(e);
+
+        }, { passive: false });
+
+
+        scroll.on('call', (value, way, obj) => {
+
+          if (way === 'enter') {
+            if(value === 'cardSection1'){
+                $("#cardSectionImg").removeClass("reveal-img");
+                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg img").addClass("rotate-img1");
+            }
+            if(value === 'cardSection2'){
+                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg img").addClass("rotate-img2");
+            }
+
+            if(value === 'cardSection3'){
+                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg img").addClass("rotate-img3");
+            }
+
+            if(value === 'cardSection4'){
+                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg img").addClass("rotate-img4");
+            }
+          }
+          if (way === 'exit') {
+            if(value === 'cardSection4'){
+                $("#cardSectionImg").addClass("reveal-img");
+                $("#cardSectionImg").removeClass("show-img");
+                $("#cardSectionImg img").removeClass("rotate-img4");
+            }
+
+
+            if(value === 'cardSection3'){
+                $("#cardSectionImg img").removeClass("rotate-img3");
+            }
+
+            if(value === 'cardSection2'){
+                $("#cardSectionImg img").removeClass("rotate-img2");
+            }
+
+
+            if(value === 'cardSection1'){
+                $("#cardSectionImg img").addClass("rotate-img1");
+            }
           }
         });
 
