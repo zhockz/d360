@@ -607,10 +607,11 @@ body#en .teamCaption p {
 }
 body#en #cardSectionImg {
   position: absolute;
-  top: -57rem;
-  z-index: 1;
-  right: 15rem;
+  top: -50%;
+  right: 0%;
   height: auto;
+  z-index: 3;
+  transform: translateY(50%) !important;
 }
 body#en .reveal-top {
   opacity: 0;
@@ -627,30 +628,51 @@ body#en .in-view {
   transform: translateY(0);
 }
 body#en .reveal-img {
-  opacity: 0;
-  transform: translateY(-100%);
+  opacity: 0 !important;
+  transform: translateY(-100%) !important;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 body#en .show-img {
   opacity: 1 !important;
-  transform: translateY(0) 1 !important;
+  transform: translateY(0) !important;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+body#en .show-img-still {
+  opacity: 1 !important;
+  top: -57rem;
+  transform: translateY(0) !important;
+}
 body#en .rotate-img1 {
-  transform: rotate(-30deg);
-  transition: all 1000ms ease;
+  transform: rotate(30deg) !important;
+  transition: transform 1000ms ease;
 }
 body#en .rotate-img2 {
-  transform: rotate(30deg);
-  transition: all 1000ms ease;
+  transform: rotate(-30deg) !important;
+  transition: transform 1000ms ease;
 }
 body#en .rotate-img3 {
-  transform: rotate(-15deg);
-  transition: all 1000ms ease;
+  transform: rotate(15deg) !important;
+  transition: transform 1000ms ease;
 }
 body#en .rotate-img4 {
-  transform: rotate(15deg);
-  transition: all 1000ms ease;
+  transform: rotate(-15deg) !important;
+  transition: transform 1000ms ease;
+}
+body#en #cardIcons1 .icon-plane {
+  opacity: 1;
+  position: absolute;
+  top: -21%;
+  right: 19%;
+  z-index: 4;
+  transform: translate(10%, 10%);
+}
+body#en #cardIcons1 .icon-coin {
+  opacity: 1;
+  position: absolute;
+  top: -21%;
+  right: 38%;
+  z-index: 4;
+  transform: translate(10%, 10%);
 }
 
 /*# sourceMappingURL=custom.css.map */

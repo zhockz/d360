@@ -28,6 +28,7 @@ export default function Home() {
 
       <section id="bannerSection" className="snap-target" data-scroll-section>
 
+      
         <div className="banner-media">
           <div className="container-fluid remPad">
             <div className="ratio ratio-16x9">
@@ -62,84 +63,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      
+        
+        <div data-scroll data-scroll-repeat data-scroll-call="cardSectionStart"></div>
       </section>
 
-      {/*<section id="cardSection" className="bg-beige" data-scroll-section>
-        <div className="container">
-          <div className="spacer-100"></div>
-
-          {/*<div className="row">
-            <div className="col-md-6">
-                <div className="card-caption capAnim capAnim-show capAnim-1">
-                  <h2 className="card-title">{t("HomePage.cardSection.title1")}</h2>
-                  <p className="card-subtitle">{t("HomePage.cardSection.subTitle1")}</p>            
-                </div>
-
-                <div className="card-caption capAnim capAnim-2">
-                  <h1 className="card-title">{t("HomePage.cardSection.title2")}</h1>
-                  <p className="card-subtitle">{t("HomePage.cardSection.subTitle2")}</p>            
-                </div>  
-
-                <div className="card-caption capAnim capAnim-3">
-                  <h1 className="card-title">{t("HomePage.cardSection.title3")}</h1>
-                  <p className="card-subtitle">{t("HomePage.cardSection.subTitle3")}</p>            
-                </div> 
-
-                <div className="card-caption capAnim capAnim-4">
-                  <h1 className="card-title">{t("HomePage.cardSection.title4")}</h1>
-                  <p className="card-subtitle">{t("HomePage.cardSection.subTitle4")}</p>            
-                </div>                 
-            </div>
-            <div className="col-md-6">
-
-            </div>
-          </div>
-
-          <div className="row vh-100 d-flex align-items-center snap-target">
-            <div className="col-md-6">
-              <div className="card-caption  capAnim-show capAnim-1">
-                <h2 className="card-title">{t("HomePage.cardSection.title1")}</h2>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle1")}</p>            
-              </div>
-            </div>
-            <div className="col-md-6"></div>
-          </div>
-
-          <div className="row vh-100 d-flex align-items-center snap-target">
-            <div className="col-md-6">
-              <div className="card-caption  capAnim-show capAnim-2">
-                <h1 className="card-title">{t("HomePage.cardSection.title2")}</h1>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle2")}</p>            
-              </div> 
-            </div>
-            <div className="col-md-6"></div>
-          </div>
-
-          <div className="row vh-100 d-flex align-items-center snap-target">
-            <div className="col-md-6"> 
-              <div className="card-caption  capAnim-show capAnim-3">
-                <h1 className="card-title">{t("HomePage.cardSection.title3")}</h1>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle3")}</p>            
-              </div> 
-            </div>
-            <div className="col-md-6"></div>
-          </div>
-
-          <div className="row vh-100 d-flex align-items-center snap-target">
-            <div className="col-md-6"> 
-              <div className="card-caption  capAnim-show capAnim-4">
-                <h1 className="card-title">{t("HomePage.cardSection.title4")}</h1>
-                <p className="card-subtitle">{t("HomePage.cardSection.subTitle4")}</p>            
-              </div>                 
-            </div>
-            <div className="col-md-6"></div>
-          </div>          
-
-          <div className="spacer-100"></div>  
-        </div>
-
-      </section>*/}
 
       <div id="cardsection" className="posRel">
 
@@ -147,8 +74,18 @@ export default function Home() {
           <Image src={'/card/card.png'} alt="" className="img-fluid" width={600} height={600}/>
         </div>
 
+        {/*<div id="cardIcons1">
+          <Image src={'/card/icon-plane.png'} alt="" className="img-fluid icon-plane" width={150} height={150}/>
+          <Image src={'/card/icon-coin.png'} alt="" className="img-fluid icon-coin" width={150} height={150}/>
+          <Image src={'/card/icon-map.png'} alt="" className="img-fluid icon-map" width={150} height={150}/>
+          <Image src={'/card/ss-1.png'} alt="" className="img-fluid icon-ss1" width={250} height={250}/>
+        </div>*/}
+
         <section id="cardSection1" className="bg-beige vh-100 snap-target" data-scroll-section>
+
+          
           <div className="container">
+
 
             <div className="row vh-100 d-flex align-items-center">
               <div className="col-md-6">
@@ -228,13 +165,17 @@ export default function Home() {
               <div className="col-md-6"></div>
             </div>           
           </div>
-
+          
         </section>
+
 
       </div>
 
-      <section id="infoSection" data-scroll-section>
+
+      <section id="infoSection" className="snap-target" data-scroll-section> 
+
         <div className="container" data-scroll-sticky>
+          <div className="spacer-100"></div>
           <div className="spacer-100"></div>
 
           <div className="row">
@@ -281,8 +222,12 @@ export default function Home() {
 
         </div>
         
+
+          <div data-scroll data-scroll-repeat data-scroll-call="cardSectionEnd"></div>
+
         <div className="spacer-100"></div>
-      
+        
+        
       </section>
 
       <section id="cardTypeSection" className="bg-black posRel vh-75"  data-scroll-section>

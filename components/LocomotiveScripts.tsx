@@ -11,6 +11,8 @@ import $ from 'jquery';
 
 const LocomotiveScripts = ({ locale }: { locale: string }) => {
 
+    const pathname = usePathname();
+
      useEffect(() => {
 
         const scroll = new LocomotiveScroll({
@@ -95,53 +97,60 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
         scroll.on('call', (value, way, obj) => {
 
           if (way === 'enter') {
+
+
+            if(value === 'cardSectionStart'){
+                $("#cardSectionImg").addClass("reveal-img");
+                $("#cardSectionImg").removeClass("show-img");   
+            } 
+
+            if(value === 'cardSectionEnd'){
+              $("#cardSectionImg").addClass("reveal-img"); 
+              $("#cardSectionImg").removeClass("show-img");  
+            } 
+             
             if(value === 'cardSection1'){
-                $("#cardSectionImg").removeClass("reveal-img");
-                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg").removeClass("reveal-img");                
+                $("#cardSectionImg").addClass("show-img");      
+
+                $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");                
                 $("#cardSectionImg img").addClass("rotate-img1");
             }
             if(value === 'cardSection2'){
-                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg").removeClass("reveal-img");             
+                $("#cardSectionImg").addClass("show-img");   
+
+                $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");  
                 $("#cardSectionImg img").addClass("rotate-img2");
             }
 
-            if(value === 'cardSection3'){
-                $("#cardSectionImg").addClass("show-img");
+            if(value === 'cardSection3'){ 
+                $("#cardSectionImg").removeClass("reveal-img");               
+                $("#cardSectionImg").addClass("show-img");    
+
+                $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");  
                 $("#cardSectionImg img").addClass("rotate-img3");
             }
 
             if(value === 'cardSection4'){
-                $("#cardSectionImg").addClass("show-img");
+                $("#cardSectionImg").removeClass("reveal-img");                  
+                $("#cardSectionImg").addClass("show-img");   
+
+                $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");  
                 $("#cardSectionImg img").addClass("rotate-img4");
             }
           }
+
           if (way === 'exit') {
-            if(value === 'cardSection4'){
-                $("#cardSectionImg").addClass("reveal-img");
-                $("#cardSectionImg").removeClass("show-img");
-                $("#cardSectionImg img").removeClass("rotate-img4");
-            }
 
-
-            if(value === 'cardSection3'){
-                $("#cardSectionImg img").removeClass("rotate-img3");
-            }
-
-            if(value === 'cardSection2'){
-                $("#cardSectionImg img").removeClass("rotate-img2");
-            }
-
-
-            if(value === 'cardSection1'){
-                $("#cardSectionImg img").addClass("rotate-img1");
-            }
+   
           }
         });
 
         new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"));
         return () => scroll.destroy();         
 
-    },[]);
+    },[pathname]);
 
 
 };
