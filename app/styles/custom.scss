@@ -566,12 +566,11 @@ body#en{
 	}
 
 	#cardSectionImg{
-		position: absolute;
-    top: -50%;
-    right: 0%;
-    height: auto;
+    position: absolute;
+    top: -57rem;
     z-index: 3;
-    transform: translateY(50%) !important;
+    right: 15rem;
+    height: auto;   
 	}
 
 	.reveal-top {
@@ -636,7 +635,7 @@ body#en{
 			opacity:1;
 			position: absolute;
 			top: -21%;
-			right: 19%;
+			right: 1%;
 			z-index: 4;
 			transform: translate(10%, 10%);
 		}

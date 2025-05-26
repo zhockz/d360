@@ -3,25 +3,25 @@ body#en {
   /* small devices */
 }
 @media only screen and (min-width: 1441px) {
-  body#en {
-    /*    .container{max-width: 1600px !important;}*/
-  }
   body#en .desktop-view {
     display: block;
   }
   body#en .mobile-view {
     display: none;
   }
+  body#en .container {
+    max-width: 1600px !important;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
-  body#en {
-    /*    .container{max-width: 1600px !important;}*/
-  }
   body#en .desktop-view {
     display: block !important;
   }
   body#en .mobile-view {
     display: none !important;
+  }
+  body#en .container {
+    max-width: 1200px !important;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

@@ -1,6 +1,7 @@
 /*english language*/
 
 body#en{
+
 	@media only screen and (min-width:1441px) {
 	    .desktop-view {
 	        display: block
@@ -9,7 +10,7 @@ body#en{
 	        display: none
 	    }
 
-	/*    .container{max-width: 1600px !important;}*/
+	.container{max-width: 1600px !important;}
 
 	}
 
@@ -21,7 +22,7 @@ body#en{
 	        display: none !important
 	    }
 
-	/*    .container{max-width: 1600px !important;}*/
+	.container{max-width: 1200px !important;}
 	}
 
 	@media only screen and (min-width:992px) and (max-width:1200px) {
