@@ -116,9 +116,18 @@ body#en {
     display: block;
     height: 60px;
   }
-  body#en .remPad {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+  body#en .banner-caption {
+    top: 16%;
+  }
+  body#en .banner-caption h2 {
+    font-size: 30px;
+  }
+  body#en .banner-subtitle {
+    font-size: 15px;
+  }
+  body#en .btn-dark-dl {
+    padding: 0.5rem 2rem !important;
+    font-size: 9px !important;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -202,9 +211,18 @@ body#en {
     display: block;
     height: 60px;
   }
-  body#en .remPad {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+  body#en .banner-caption {
+    top: 16%;
+  }
+  body#en .banner-caption h2 {
+    font-size: 30px;
+  }
+  body#en .banner-subtitle {
+    font-size: 15px;
+  }
+  body#en .btn-dark-dl {
+    padding: 0.5rem 2rem !important;
+    font-size: 9px !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -288,9 +306,11 @@ body#en {
     display: block;
     height: 60px;
   }
-  body#en .remPad {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+  body#en .banner-caption {
+    top: 26%;
+  }
+  body#en .banner-caption h2 {
+    font-size: 30px;
   }
 }
 

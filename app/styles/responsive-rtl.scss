@@ -116,11 +116,14 @@ body#ar{
 	        display: block;
 	        height: 60px
 	    }
-	    .remPad {
-	        padding-right: 12px !important;
-	        padding-left: 12px !important
-	    }
-	   
+	    
+	    .banner-caption{top: 16%;}
+		.banner-caption h2{font-size: 30px;}
+		.banner-subtitle {font-size: 15px;}
+		.btn-dark-dl{
+		    padding: 0.5rem 2rem !important;
+		    font-size: 9px !important;
+		}
 	}
 
 	@media only screen and (max-width:767px) {
@@ -205,10 +208,13 @@ body#ar{
 	        height: 60px
 	    }
 
-	    .remPad {
-	        padding-right: 12px !important;
-	        padding-left: 12px !important
-	    }
+	    .banner-caption{top: 16%;}
+		.banner-caption h2{font-size: 30px;}
+		.banner-subtitle {font-size: 15px;}
+		.btn-dark-dl{
+		    padding: 0.5rem 2rem !important;
+		    font-size: 9px !important;
+		}
 	   
 	}
 
@@ -293,10 +299,13 @@ body#ar{
 	        display: block;
 	        height: 60px
 	    }
-	    .remPad {
-	        padding-right: 12px !important;
-	        padding-left: 12px !important
-	    }
+	    .banner-caption{top: 16%;}
+		.banner-caption h2{font-size: 30px;}
+		.banner-subtitle {font-size: 15px;}
+		.btn-dark-dl{
+		    padding: 0.5rem 2rem !important;
+		    font-size: 9px !important;
+		}
 	   
 	}
 } 

@@ -662,13 +662,6 @@ body#en .rotate-img4 {
   transform: rotate(-10deg) !important;
   transition: transform 1000ms ease;
 }
-body#en #cardIcons1.hideIcons,
-body#en #cardIcons2.hideIcons,
-body#en #cardIcons3.hideIcons,
-body#en #cardIcons4.hideIcons {
-  opacity: 0;
-  transition: opacity 1000ms ease-in-out;
-}
 body#en #cardIcons1.hideIcons .icon1,
 body#en #cardIcons2.hideIcons .icon1,
 body#en #cardIcons3.hideIcons .icon1,
@@ -679,7 +672,7 @@ body#en #cardIcons4.hideIcons .icon1 {
   right: 18%;
   z-index: 4;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 body#en #cardIcons1.hideIcons .icon2,
 body#en #cardIcons2.hideIcons .icon2,
@@ -691,7 +684,7 @@ body#en #cardIcons4.hideIcons .icon2 {
   right: 40%;
   z-index: 4;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 body#en #cardIcons1.hideIcons .icon3,
 body#en #cardIcons2.hideIcons .icon3,
@@ -703,7 +696,7 @@ body#en #cardIcons4.hideIcons .icon3 {
   right: 26%;
   z-index: 4;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 body#en #cardIcons1.hideIcons .icon4,
 body#en #cardIcons2.hideIcons .icon4,
@@ -715,14 +708,7 @@ body#en #cardIcons4.hideIcons .icon4 {
   right: 35%;
   z-index: 4;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
-}
-body#en #cardIcons1,
-body#en #cardIcons2,
-body#en #cardIcons3,
-body#en #cardIcons4 {
-  opacity: 1;
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 body#en #cardIcons1 .icon1,
 body#en #cardIcons2 .icon1,
@@ -735,7 +721,6 @@ body#en #cardIcons4 .icon1 {
   z-index: 4;
   max-width: 5%;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
 }
 body#en #cardIcons1 .icon2,
 body#en #cardIcons2 .icon2,
@@ -748,7 +733,6 @@ body#en #cardIcons4 .icon2 {
   z-index: 4;
   max-width: 5%;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
 }
 body#en #cardIcons1 .icon3,
 body#en #cardIcons2 .icon3,
@@ -761,7 +745,6 @@ body#en #cardIcons4 .icon3 {
   z-index: 4;
   max-width: 5%;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
 }
 body#en #cardIcons1 .icon4,
 body#en #cardIcons2 .icon4,
@@ -774,7 +757,6 @@ body#en #cardIcons4 .icon4 {
   max-width: 20%;
   z-index: 4;
   transform: translate(10%, 10%);
-  transition: opacity 1000ms ease-in-out;
 }
 body#en .modal-header {
   border: none !important;

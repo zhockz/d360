@@ -119,10 +119,13 @@ body#en{
 	        display: block;
 	        height: 60px
 	    }
-	    .remPad {
-	        padding-left: 12px !important;
-	        padding-right: 12px !important
-	    }
+	    .banner-caption{top: 16%;}
+		.banner-caption h2{font-size: 30px;}
+		.banner-subtitle {font-size: 15px;}
+		.btn-dark-dl{
+		    padding: 0.5rem 2rem !important;
+		    font-size: 9px !important;
+		}
 	   
 	}
 
@@ -208,11 +211,14 @@ body#en{
 	        height: 60px
 	    }
 
-	    .remPad {
-	        padding-left: 12px !important;
-	        padding-right: 12px !important
-	    }
-	   
+
+	    .banner-caption{top: 16%;}
+		.banner-caption h2{font-size: 30px;}
+		.banner-subtitle {font-size: 15px;}
+		.btn-dark-dl{
+		    padding: 0.5rem 2rem !important;
+		    font-size: 9px !important;
+		}	   
 	}
 
 	@media only screen and (min-width:480px) and (max-width:767px) {
@@ -296,10 +302,9 @@ body#en{
 	        display: block;
 	        height: 60px
 	    }
-	    .remPad {
-	        padding-left: 12px !important;
-	        padding-right: 12px !important
-	    }
+
+	    .banner-caption{top: 26%;}
+		.banner-caption h2{font-size: 30px;}
 	   
 	}
 } 

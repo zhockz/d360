@@ -116,9 +116,18 @@ body#ar {
     display: block;
     height: 60px;
   }
-  body#ar .remPad {
-    padding-right: 12px !important;
-    padding-left: 12px !important;
+  body#ar .banner-caption {
+    top: 16%;
+  }
+  body#ar .banner-caption h2 {
+    font-size: 30px;
+  }
+  body#ar .banner-subtitle {
+    font-size: 15px;
+  }
+  body#ar .btn-dark-dl {
+    padding: 0.5rem 2rem !important;
+    font-size: 9px !important;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -202,9 +211,18 @@ body#ar {
     display: block;
     height: 60px;
   }
-  body#ar .remPad {
-    padding-right: 12px !important;
-    padding-left: 12px !important;
+  body#ar .banner-caption {
+    top: 16%;
+  }
+  body#ar .banner-caption h2 {
+    font-size: 30px;
+  }
+  body#ar .banner-subtitle {
+    font-size: 15px;
+  }
+  body#ar .btn-dark-dl {
+    padding: 0.5rem 2rem !important;
+    font-size: 9px !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -288,9 +306,18 @@ body#ar {
     display: block;
     height: 60px;
   }
-  body#ar .remPad {
-    padding-right: 12px !important;
-    padding-left: 12px !important;
+  body#ar .banner-caption {
+    top: 16%;
+  }
+  body#ar .banner-caption h2 {
+    font-size: 30px;
+  }
+  body#ar .banner-subtitle {
+    font-size: 15px;
+  }
+  body#ar .btn-dark-dl {
+    padding: 0.5rem 2rem !important;
+    font-size: 9px !important;
   }
 }
 

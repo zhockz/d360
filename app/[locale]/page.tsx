@@ -44,7 +44,7 @@ export default function Home() {
           <div className="container">
 
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-7 col-md-6">
                 <div className="col-lang col-en">
                   <h2 className="banner-title lato-black">{t("HomePage.bannerSection.title")}</h2>
                   <p className="banner-subtitle">{t("HomePage.bannerSection.subTitle")}</p>
@@ -52,7 +52,7 @@ export default function Home() {
                   <button className="btn btn-dark btn-lg btn-dark-dl" data-bs-toggle="modal" data-bs-target="#dpAppQr">{t("Buttons.dpApp")}</button>                  
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-7 col-md-6">
                 <div className="col-lang col-ar">
                   <h2 className="banner-title">{t("HomePage.bannerSection.title")}</h2>
                   <p className="banner-subtitle">{t("HomePage.bannerSection.subTitle")}</p>
@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
 
-      <div id="cardsection" className="posRel">
+      <div id="cardsection" className="posRel desktop-view">
 
         <div id="cardSectionImg" className="reveal-img">
           <Image src={'/card/card.png'} alt="" className="img-fluid" width={600} height={600}/>
@@ -251,7 +251,7 @@ export default function Home() {
         
       </section>
 
-      <section id="cardTypeSection" className="bg-black posRel vh-75"  data-scroll-section>
+      <section id="cardTypeSection" className="bg-black posRel vh-75 desktop-view"  data-scroll-section>
         <div className="container-fluid posRel vh-75 remPad">
 
           <div className="ct-anim-bg vh-75">
