@@ -101,12 +101,14 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
 
             if(value === 'cardSectionStart'){
                 $("#cardSectionImg").addClass("reveal-img");
-                $("#cardSectionImg").removeClass("show-img");   
+                $("#cardSectionImg").removeClass("show-img");
+                $("#cardIcons1,#cardIcons2,#cardIcons3,#cardIcons4").addClass("hideIcons");   
             } 
 
             if(value === 'cardSectionEnd'){
-              $("#cardSectionImg").addClass("reveal-img"); 
-              $("#cardSectionImg").removeClass("show-img");  
+                $("#cardSectionImg").addClass("reveal-img"); 
+                $("#cardSectionImg").removeClass("show-img");  
+                $("#cardIcons1,#cardIcons2,#cardIcons3,#cardIcons4").addClass("hideIcons");  
             } 
              
             if(value === 'cardSection1'){
@@ -115,6 +117,8 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
 
                 $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");                
                 $("#cardSectionImg img").addClass("rotate-img1");
+                $("#cardIcons1,#cardIcons2,#cardIcons3,#cardIcons4").addClass("hideIcons");                 
+                $("#cardIcons1").removeClass("hideIcons");
             }
             if(value === 'cardSection2'){
                 $("#cardSectionImg").removeClass("reveal-img");             
@@ -122,6 +126,9 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
 
                 $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");  
                 $("#cardSectionImg img").addClass("rotate-img2");
+
+                $("#cardIcons1,#cardIcons2,#cardIcons3,#cardIcons4").addClass("hideIcons"); 
+                $("#cardIcons2").removeClass("hideIcons");
             }
 
             if(value === 'cardSection3'){ 
@@ -130,6 +137,9 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
 
                 $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");  
                 $("#cardSectionImg img").addClass("rotate-img3");
+
+                $("#cardIcons1,#cardIcons2,#cardIcons3,#cardIcons4").addClass("hideIcons"); 
+                $("#cardIcons3").removeClass("hideIcons");                
             }
 
             if(value === 'cardSection4'){
@@ -138,6 +148,9 @@ const LocomotiveScripts = ({ locale }: { locale: string }) => {
 
                 $("#cardSectionImg img").removeClass("rotate-img1 rotate-img2 rotate-img3 rotate-img4");  
                 $("#cardSectionImg img").addClass("rotate-img4");
+
+                $("#cardIcons1,#cardIcons2,#cardIcons3,#cardIcons4").addClass("hideIcons"); 
+                $("#cardIcons4").removeClass("hideIcons");
             }
           }
 

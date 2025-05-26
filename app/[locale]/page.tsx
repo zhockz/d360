@@ -49,7 +49,7 @@ export default function Home() {
                   <h2 className="banner-title lato-black">{t("HomePage.bannerSection.title")}</h2>
                   <p className="banner-subtitle">{t("HomePage.bannerSection.subTitle")}</p>
                   <div className="spacer-20"></div>
-                  <button className="btn btn-dark btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>                  
+                  <button className="btn btn-dark btn-lg btn-dark-dl" data-bs-toggle="modal" data-bs-target="#dpAppQr">{t("Buttons.dpApp")}</button>                  
                 </div>
               </div>
               <div className="col-md-6">
@@ -74,12 +74,33 @@ export default function Home() {
           <Image src={'/card/card.png'} alt="" className="img-fluid" width={600} height={600}/>
         </div>
 
-        {/*<div id="cardIcons1">
-          <Image src={'/card/icon-plane.png'} alt="" className="img-fluid icon-plane" width={150} height={150}/>
-          <Image src={'/card/icon-coin.png'} alt="" className="img-fluid icon-coin" width={150} height={150}/>
-          <Image src={'/card/icon-map.png'} alt="" className="img-fluid icon-map" width={150} height={150}/>
-          <Image src={'/card/ss-1.png'} alt="" className="img-fluid icon-ss1" width={250} height={250}/>
-        </div>*/}
+        <div id="cardIcons1" className="hideIcons">
+          <Image src={'/card/icon-plane.png'} alt="" className="img-fluid icon1" width={150} height={150}/>
+          <Image src={'/card/icon-coin.png'} alt="" className="img-fluid icon2" width={150} height={150}/>
+          <Image src={'/card/icon-map.png'} alt="" className="img-fluid icon3" width={150} height={150}/>
+          <Image src={'/card/ss-1.png'} alt="" className="img-fluid icon4" width={350} height={350}/>
+        </div>
+
+        <div id="cardIcons2" className="hideIcons">
+          <Image src={'/card/icon-lock.png'} alt="" className="img-fluid icon1" width={150} height={150}/>
+          <Image src={'/card/icon-coin.png'} alt="" className="img-fluid icon2" width={150} height={150}/>
+          <Image src={'/card/icon-shield.png'} alt="" className="img-fluid icon3" width={150} height={150}/>
+          <Image src={'/card/ss-2.png'} alt="" className="img-fluid icon4" width={350} height={350}/>
+        </div>
+
+        <div id="cardIcons3" className="hideIcons">
+          <Image src={'/card/icon-arrow.png'} alt="" className="img-fluid icon1" width={150} height={150}/>
+          <Image src={'/card/icon-rocket.png'} alt="" className="img-fluid icon2" width={150} height={150}/>
+          <Image src={'/card/iocn-clock.png'} alt="" className="img-fluid icon3" width={150} height={150}/>
+          <Image src={'/card/ss-3.png'} alt="" className="img-fluid icon4" width={350} height={350}/>
+        </div>
+
+        <div id="cardIcons4" className="hideIcons">
+          <Image src={'/card/icon-diamond.png'} alt="" className="img-fluid icon1" width={150} height={150}/>
+          <Image src={'/card/icon-search.png'} alt="" className="img-fluid icon2" width={150} height={150}/>
+          <Image src={'/card/icon-coin.png'} alt="" className="img-fluid icon3" width={150} height={150}/>
+          <Image src={'/card/ss-4.png'} alt="" className="img-fluid icon4" width={350} height={350}/>
+        </div>
 
         <section id="cardSection1" className="bg-beige vh-100 snap-target" data-scroll-section>
 

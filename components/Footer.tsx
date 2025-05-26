@@ -19,6 +19,8 @@ const Footer = ({ locale }: { locale: string }) => {
 
   return(
 
+
+
 	  	<footer className="bg-white" data-scroll-section>
 
 	  		<div className="spacer-100"></div>
@@ -108,7 +110,12 @@ const Footer = ({ locale }: { locale: string }) => {
 
 	  		<div className="spacer-80"></div>
 
+
+
+
 	  	</footer>
+
+
 
 	  	
 

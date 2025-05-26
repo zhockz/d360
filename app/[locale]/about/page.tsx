@@ -39,7 +39,7 @@ export default function About() {
                 <div className="col-lang col-en">
                   <h2 className="banner-title-page fnt-drk-blue">{t("AboutPage.bannerSection.title")}<br/>{t("AboutPage.bannerSection.subTitle")}</h2>
                   <div className="spacer-20"></div>
-                  <button className="btn btn-orange btn-lg btn-dark-dl">{t("Buttons.dpApp")}</button>
+                  <button className="btn btn-orange btn-lg btn-dark-dl" data-bs-toggle="modal" data-bs-target="#dpAppQr">{t("Buttons.dpApp")}</button>
                 </div>
               </div>
 

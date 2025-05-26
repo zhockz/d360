@@ -10,7 +10,7 @@ body#en {
     display: none;
   }
   body#en .container {
-    max-width: 1600px !important;
+    max-width: 1441px !important;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
